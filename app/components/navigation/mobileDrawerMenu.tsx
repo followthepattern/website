@@ -6,6 +6,7 @@ import Link from "next/link";
 import ChevronDownIcon from "@/icons/ChevronDownIcon";
 import classNames from "classnames";
 import { NavigationItem } from "./navigation";
+import { usePathname } from "next/navigation";
 
 interface MobileDrawerMenuProperties {
     className?: string
@@ -17,6 +18,7 @@ interface MobileDrawerMenuProperties {
 interface DrawerDisclosureProperties {
     name: string
     navigation: NavigationItem[]
+    pathName: string
 
 }
 
@@ -38,7 +40,10 @@ function DrawerDisclosure(props: DrawerDisclosureProperties) {
                                 key={item.name}
                                 href={item.href}
                                 target={item.target}
-                                className="block rounded-lg py-2 pl-6 pr-8 font-semibold text-gray-900 hover:bg-gray-50"
+                                className={classNames("block rounded-lg py-2 pl-6 pr-8 font-semibold hover:bg-gray-50", {
+                                    "text-gray-900": props.pathName != item.href,
+                                    "text-blue-600": props.pathName == item.href,
+                                })}
                             >
                                 {item.name}
                             </Link>
@@ -51,6 +56,8 @@ function DrawerDisclosure(props: DrawerDisclosureProperties) {
 }
 
 export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
+    const pathName = usePathname();
+
     return (
         <Dialog as="div" className={classNames(props.className)} open={props.mobileMenuOpen} onClose={props.setMobileMenuOpen}>
             <div className="fixed inset-0 z-10" />
@@ -72,20 +79,24 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
                         {props.navigation.map((item) => {
                             if (item.children) {
                                 return (
-                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} />
+                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} />
                                 )
                             }
-                            
+
                             return (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                target={item.target}
-                                className="-mx-3 font-semibold block rounded-lg px-3 py-2 leading-7 text-gray-900 hover:bg-gray-50"
-                            >
-                                {item.name}
-                            </Link>
-                        )})}
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    target={item.target}
+                                    className={classNames("-mx-3 font-semibold block rounded-lg px-3 py-2 leading-7 text-gray-900 hover:bg-gray-50",
+                                        { "text-blue-900": pathName == item.href },
+                                        { "text-gray-900": pathName != item.href }
+                                    )}
+                                >
+                                    {item.name}
+                                </Link>
+                            )
+                        })}
                     </div>
                 </div>
             </Dialog.Panel>

@@ -2,11 +2,11 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLink, PodcastLink } from "../components/PodcastLink";
+import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
-export default function SeventhEpisode() {
-    const episode = episodes[6]
+export default function EightEpisode() {
+    const episode = episodes[7]
 
     return (
         <EpisodeBody episode={episode}>
@@ -33,12 +33,9 @@ export default function SeventhEpisode() {
             </h2>
             <div className="mt-3 font-light leading-7 text-slate-700">
                 <ul className="list-none list-inside list-dec">
-                    <li>László Fogas <PodcastLink href="https://www.linkedin.com/in/laszlofogas/">LinkedIn</PodcastLink></li>
-                    <li>Cloud Native Szeged <PodcastLink href="https://www.meetup.com/cloud-native-szeged/">Meetup</PodcastLink></li>
-                    <li>K8s Budapest <PodcastLink href="https://www.meetup.com/k8s-bud/">Meetup</PodcastLink></li>
-                    <li>László Fogas <PodcastLink href="https://twitter.com/laszlocph">Twitter</PodcastLink></li>
-                    <li>Cloud Native Hungary <PodcastLink href="https://discord.gg/tMD8NFhchh">Discord</PodcastLink></li>
-                    <FPDiscordLink />
+                    <li><PodcastLink href="https://en.wikipedia.org/wiki/Dirac_large_numbers_hypothesis">Dirac large numbers hypothesis</PodcastLink></li>
+                    <li><PodcastLink href="http://www.agt.bme.hu/volgyesi/gravity/cair_g_t.pdf">Some possible physical reason of time variation of Earth’s gravity field</PodcastLink></li>
+                    <FPDiscordLinkHUN />
                 </ul>
             </div>
         </EpisodeBody>

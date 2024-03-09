@@ -96,4 +96,21 @@ export const episodes: EpisodeProperty[] = [{
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast7.mp3",
         type: "audio/mpeg"
     }
-},]
+},{
+    id: "8",
+    title: "A Föld keletkezésének magyarázata elemi részecskékkel | Dr. Völgyesi Lajos | EP 8",
+    guest: "Dr. Völgyesi Lajos",
+    lang: "HUN",
+    playing: false,
+    description: `A Föld egy lehetséges keletkezésének elméletéről beszélgettem Dr. Völgyesi Lajos geofizikussal, aki egyben az ELTE Természettudományi doktora, a BME habilitált doktora és a Magyar Tudományos Akadémia levelező tagja.
+
+    Egy olyan megközelítést oszt meg velünk a vendégem, amit szerintem nagyon kevesen ismernek még.
+    
+    Ez egy inkább tudományos témájú epizód, viszont vendégemmel törekedtünk arra, hogy minél szélesebb körben érthető legyen.
+    `,
+    published: "Februray 23, 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast8.mp3",
+        type: "audio/mpeg"
+    }
+}]

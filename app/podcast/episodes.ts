@@ -98,7 +98,7 @@ export const episodes: EpisodeProperty[] = [{
     }
 },{
     id: "8",
-    title: "A Föld keletkezésének magyarázata elemi részecskékkel | Dr. Völgyesi Lajos | EP 8",
+    title: "A Föld keletkezésének magyarázata elemi részecskékkel",
     guest: "Dr. Völgyesi Lajos",
     lang: "HUN",
     playing: false,

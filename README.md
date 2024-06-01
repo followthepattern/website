@@ -23,5 +23,5 @@ Stay at the top of the industry by utilizing the best tools and mastering the la
 
 ### Contact Information
 - Website: [followthepattern.net](https://www.followthepattern.net)
-- Discord: [Join our community](https://discord.com/invite/followthepattern)
-- Email: [info@followthepattern.net](mailto:info@followthepattern.net)
+- Discord: [Join our community](https://discord.com/invite/kDuKyG4EET)
+- Email: [csaba@followthepattern.net](mailto:csaba@followthepattern.net)

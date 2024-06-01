@@ -113,4 +113,28 @@ export const episodes: EpisodeProperty[] = [{
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast8.mp3",
         type: "audio/mpeg"
     }
+}, {
+    id: "9",
+    title: "I was really intrigued to TRY something on my OWN",
+    guest: "Vilté Székely",
+    lang: "HUN",
+    playing: false,
+    description: `Vilté Székely is an HR technology expert and the Co-founder of Nordconn Sweden. She shares her incredible journey of moving from Hungary to Sweden and the challenges and successes of starting and building a new company, extending her successful career of over a decade.`,
+    published: "March 20, 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast9.mp3",
+        type: "audio/mpeg"
+    }
+}, {
+    id: "10",
+    title: "“Lots of our customers AI focused companies”",
+    guest: "Márk Sági-Kazár",
+    lang: "ENG",
+    playing: false,
+    description: `Márk Sági-Kazár is a CNCF Ambassador and works as the Head of OSS at OpenMeter. We'll discuss what OpenMeter is and how it provides solution for AI startups to meter their usage and turn it into billing!`,
+    published: "April 26, 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast10.mp3",
+        type: "audio/mpeg"
+    }
 }]

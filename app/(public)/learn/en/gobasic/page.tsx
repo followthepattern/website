@@ -103,7 +103,7 @@ export default function GoBasic() {
           >
             <div className="px-2 py-12 bg-blue-500 rounded-t-md">
               <PricingBox.Title>Go Basic</PricingBox.Title>
-              <PricingBox.Subtitle>Master the Go language quickly and efficiently.</PricingBox.Subtitle>
+              <PricingBox.Subtitle>Master the Go language quickly and efficiently</PricingBox.Subtitle>
             </div>
             <PricingBox.Content className="pl-6 pr-4 py-8">
               <PricingBox.Feature>

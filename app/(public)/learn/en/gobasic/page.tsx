@@ -19,7 +19,7 @@ export default function GoBasic() {
             </h1>
             <p className="mx-10 md:max-w-2xl md:mx-auto text-lg font-light">
               Sign up for our five-week online course and master the Go programming language through practical examples.
-              This course is designed to fit into your busy schedule, allowing you to learn while you work.
+              This course is designed to fit into your busy schedule.
             </p>
             <div className="flex justify-center">
               <Link href="#pricing" className="rounded-lg w-32 text-center bg-blue-600 px-3 py-3 font-semibold text-white hover:bg-blue-700 focus:bg-blue-900">

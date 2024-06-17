@@ -1,7 +1,7 @@
 
 import ContactForm from "@/app/(public)/contact/components/Contact";
-import PricingBox from "../components/PricingBox";
-import Timeline from "../components/Timeline";
+import PricingBox from "../../components/PricingBox";
+import Timeline from "../../components/Timeline";
 import Link from "next/link";
 import Section from "@/app/components/section";
 import { RectangleBackground } from "@/app/components/patternBackground";
@@ -56,7 +56,6 @@ export default function GoBasic() {
             subtitle="Alapvető nyelvi elemek"
           >
             <p>alap típusok</p>
-            <p>összetett típusok</p>
             <p>függvények</p>
             <p>conditionals</p>
             <p>loops</p>
@@ -66,13 +65,13 @@ export default function GoBasic() {
             title="Nyelvi alapok II."
             subtitle="Alapvető nyelvi elemek"
           >
-            <p>öröklés helyett embedding</p>
             <p>összetett típusok</p>
+            <p>öröklés helyett embedding</p>
           </Timeline.Item>
           <Timeline.Item
             id={4}
             title="Hasznos modulok"
-            subtitle="Tapasztalatom szerint a legfontosabb és legnépszerűbb modulok bemutatása"
+            subtitle="Egyik legfontosabb és legnépszerűbb modulok bemutatása"
           >
             <p>standard libraries</p>
             <p>third party libraries</p>
@@ -112,10 +111,10 @@ export default function GoBasic() {
                 Go Basic kurzus tananyag
               </PricingBox.Feature>
               <PricingBox.Feature>
-                Hozzáférés az online learning platformhoz
+                Hozzáférés az online kód platformhoz
               </PricingBox.Feature>
               <PricingBox.Feature>
-                Öt héten keresztül két órás online előadás
+                Öt héten keresztül két órás online élő előadás
               </PricingBox.Feature>
               <PricingBox.Feature>
                 Előadás anyagai később felvételről elérhető

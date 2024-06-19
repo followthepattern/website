@@ -13,6 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://followthepattern.s3.us-east-2.amazonaws.com/fp/fp-analytics.js" />
+      </head>
       <body>{children}</body>
     </html>
   )

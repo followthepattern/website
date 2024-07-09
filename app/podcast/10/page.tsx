@@ -6,7 +6,7 @@ import { FPDiscordLink, PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function EightEpisode() {
-    const episode = episodes[7]
+    const episode = episodes[9]
 
     return (
         <EpisodeBody episode={episode}>

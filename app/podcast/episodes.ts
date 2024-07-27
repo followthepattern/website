@@ -137,4 +137,31 @@ export const episodes: EpisodeProperty[] = [{
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast10.mp3",
         type: "audio/mpeg"
     }
+}, {
+    id: "11",
+    title: "They keep Reshaping the IT Industry",
+    guest: "Sam Alba",
+    lang: "ENG",
+    playing: false,
+    description: `I talk with Sam Alba, who co-founded Docker and is now a co-founder of Dagger. Dagger is a new CI/CD engine that changes complicated pipelines, often made of shell scripts and YAML files, into simple, easy-to-use code.
+
+Listen in to discover how Dagger aims to set new standards in the industry and learn about the team’s amazing journey in changing cloud computing.
+`,
+    published: "Jun 1, 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast11.mp3",
+        type: "audio/mpeg"
+    }
+}, {
+    id: "12",
+    title: "Csak egy egészséges testből lehet kihozni a legtöbbet",
+    guest: "Kovács Martin",
+    lang: "HUN",
+    playing: false,
+    description: `Kovács Martin hazánkban az egyik legeredményesebb felkészítő edző. Több magas szintű testépítő versenyfelkészülését is ő koordinálja. Egyik IFBB Pro versenyzője, Nagy Richárd, kvalifikált a Mr Olympiára. Ebben az epizódban megismerjük Kovács Martint és az ő megközelítését a testépítéshez. Nagy Richárd felkészüléséről is beszélünk, és arról, miért volt ilyen sikeres. Továbbá teljesítmény fokozók használatáról is fogunk beszélni, mind versenysportban, mind azon kívül is.`,
+    published: "Jun 20, 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast12.mp3",
+        type: "audio/mpeg"
+    }
 }]

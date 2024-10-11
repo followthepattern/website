@@ -45,7 +45,7 @@ const navigation : NavigationItem[] = [
         name: 'Explore & Code', href: '#', children: [
             {
                 name: "WIKI",
-                href: "https://wiki.followthepattern.net/en/home",
+                href: "https://wiki.followthepattern.net/",
                 description: 'Enhance your skills with Golang practices',
                 target: "_blank"
             },

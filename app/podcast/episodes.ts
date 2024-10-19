@@ -164,4 +164,28 @@ Listen in to discover how Dagger aims to set new standards in the industry and l
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast12.mp3",
         type: "audio/mpeg"
     }
+}, {
+    id: "13",
+    title: "Súlyos ellátási problémák lesznek már ezen évszázadon belül",
+    guest: "Gelencsér András",
+    lang: "HUN",
+    playing: false,
+    description: `Gelencsér András a vendégem, aki levegőkémikus, akadémikus, egyetemi tanár, és a Pannon Egyetem korábbi rektora. Ebben az epizódban a Föld nyersanyagkészleteinek drasztikus ütemű kimerüléséről fogunk beszélni. Nemcsak az erőforrásokról lesz szó, hanem azokról a nyersanyagokról is, amelyek alapvető építőkövei modern civilizációnknak. Az adás során megpróbáljuk részletesen elemezni ezt a jelenséget.`,
+    published: "5 Sept 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast13.mp3",
+        type: "audio/mpeg"
+    }
+}, {
+    id: "14",
+    title: "Harmadik világháborút a maga kedvéért sem kezdem el",
+    guest: "Dr. Nógrádi György",
+    lang: "HUN",
+    playing: false,
+    description: `Nógrádi György biztonságpolitikai szakértő a vendégem. Ebben az epizódban a 2022 -ben kirobbant Orosz – Ukrán háborúról fogunk beszélni. Amelyhez hasonló Európában már nagyon hosszú ideje nem volt. Részletezni fogjuk a háborúnak az előzményeit, a konfliktus kialakulásának lehetséges okait, ami talán visszavezethető a szovjet unió bomlásához. Továbbá azt is, hogy miben különbözik ez a háború a korábban látottaktól. Mint hírközlésben, propaganda módjában és a háborúzás során felhasznált technológiákban`,
+    published: "10 Oct 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast14.mp3",
+        type: "audio/mpeg"
+    }
 }]

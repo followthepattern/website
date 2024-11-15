@@ -126,9 +126,6 @@ export default function GoBasic() {
                 Ár visszatérítési garancia
               </PricingBox.Feature>
             </PricingBox.Content>
-            <PricingBox.Content className="border-t border-blue-500 py-6 text-center font-medium text-blue-900">
-              <p>Br 150 000 Ft</p>
-            </PricingBox.Content>
           </PricingBox>
         </div>
       </Section>

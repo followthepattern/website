@@ -131,9 +131,6 @@ const GoAdvanced = () => {
                                 Ár visszatérítési garancia
                             </PricingBox.Feature>
                         </PricingBox.Content>
-                        <PricingBox.Content className="border-t border-blue-500 py-6 text-center font-medium text-blue-900">
-                            Br 180 000 Ft
-                        </PricingBox.Content>
                     </PricingBox>
                 </div>
             </Section>

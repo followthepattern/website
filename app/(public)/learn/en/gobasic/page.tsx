@@ -125,9 +125,6 @@ export default function GoBasic() {
                 Money-back guarantee
               </PricingBox.Feature>
             </PricingBox.Content>
-            <PricingBox.Content className="border-t border-blue-500 py-6 text-center font-medium text-blue-900">
-              <p>Br 400 USD</p>
-            </PricingBox.Content>
           </PricingBox>
         </div>
       </Section>

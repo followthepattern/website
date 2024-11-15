@@ -5,7 +5,7 @@ import EpisodeBody from "../components/EpisodeBody";
 import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
-export default function ThirdEpisode() {
+export default function Episode() {
     const episode = episodes[2]
 
     return (

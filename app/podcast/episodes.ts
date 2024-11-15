@@ -96,7 +96,7 @@ export const episodes: EpisodeProperty[] = [{
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast7.mp3",
         type: "audio/mpeg"
     }
-},{
+}, {
     id: "8",
     title: "A Föld keletkezésének magyarázata elemi részecskékkel",
     guest: "Dr. Völgyesi Lajos",
@@ -186,6 +186,19 @@ Listen in to discover how Dagger aims to set new standards in the industry and l
     published: "10 Oct 2024",
     audio: {
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast14.mp3",
+        type: "audio/mpeg"
+    }
+},
+{
+    id: "15",
+    title: "Nem a ChatGPT-vel kell versenyezni",
+    guest: "Dr. Rab Árpád",
+    lang: "HUN",
+    playing: false,
+    description: `Ebben az epizódban a mesterséges intelligencia társadalomra gyakorolt hatásairól fogunk beszélni. Mint például az adatelemzésben és megfigyelésben betöltött szerepéről. De szó lesz még arról is, hogy miért fontos a technológia fejlődése az emberiségnek és a túlnépesedés és a magasszintű automatizálás együttes hatásáról`,
+    published: "8 Nov 2024",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast15.mp3",
         type: "audio/mpeg"
     }
 }]

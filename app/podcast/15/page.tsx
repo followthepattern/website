@@ -2,11 +2,11 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
+import { FPDiscordLinkHUN } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
-    const episode = episodes[1]
+    const episode = episodes[14]
 
     return (
         <EpisodeBody episode={episode}>
@@ -32,8 +32,7 @@ export default function Episode() {
                 <span className="ml-2">Links</span>
             </h2>
             <div className="mt-3 font-light leading-7 text-slate-700">
-                <ul className="list-none listt-inside list-dec">
-                    <li>Fábián Ferenc <PodcastLink href="https://github.com/PumpkinSeed">Github</PodcastLink> profilja, kövessétek!</li>
+                <ul className="list-none list-inside list-dec">
                     <FPDiscordLinkHUN />
                 </ul>
             </div>

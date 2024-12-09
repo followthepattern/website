@@ -218,15 +218,15 @@ const CV = () => {
                         </div>
                         <div className="mt-2 sm:my-auto">
                             <div className="text-xl font-medium text-center sm:text-left sm:text-3xl sm:ml-10">
-                                <div className="mb-3">Senior Golang Engineer</div>
-                                <div className="mb-3">Coding teacher</div>
+                                <div className="mb-3">Senior Go Engineer</div>
+                                <div className="mb-3">TypeScript Developer</div>
                                 <div className="">Podcaster</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="mx-auto mt-10 font-light">
-                    As a Senior Golang Engineer with eight years of diverse experience, I specialize in constructing robust web applications across various domains.
+                    As a Senior Go Engineer with a decade of diverse experience, I specialize in constructing robust web applications across various domains.
                     My proficiency is not limited to back-end development but also includes front-end and DevOps domains.
                     I teach Golang and I am also a podcaster. I am always looking for new ways to solve problems.
                 </div>
@@ -238,10 +238,6 @@ const CV = () => {
                     <Link className="flex space-x-4" href={PodcastYoutubeLink} target="_blank" rel="noreferrer">
                         <Youtube className="w-10 h-10 fill-[#f00]" />
                         <div className="my-auto font-medium">The FP Podcast</div>
-                    </Link>
-                    <Link className="flex space-x-4" href={DiscordLink} target="_blank" rel="noreferrer">
-                        <Discord className="w-10 h-10 fill-[#5865F2]" />
-                        <div className="my-auto font-medium">Join to Hire Students</div>
                     </Link>
                 </div>
             </header>

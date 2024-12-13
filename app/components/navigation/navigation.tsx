@@ -19,16 +19,16 @@ export interface NavigationItem {
 const navigation : NavigationItem[] = [
     {
         name: 'Learning', href: '#', children: [
-            {
-                name: "Go Basic ENG",
-                href: "/learn/en/gobasic",
-                description: 'Learn to develop applications and web services in Golang in a practical way'
-            },
-            {
-                name: "Go Advanced ENG",
-                href: "/learn/en/goadvanced",
-                description: 'Become a master of Generics and Concurrency in the Go programming language'
-            },
+            // {
+            //     name: "Go Basic ENG",
+            //     href: "/learn/en/gobasic",
+            //     description: 'Learn to develop applications and web services in Golang in a practical way'
+            // },
+            // {
+            //     name: "Go Advanced ENG",
+            //     href: "/learn/en/goadvanced",
+            //     description: 'Become a master of Generics and Concurrency in the Go programming language'
+            // },
             {
                 name: "Go Basic HUN",
                 href: "/learn/hu/gobasic",

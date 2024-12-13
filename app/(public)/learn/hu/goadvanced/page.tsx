@@ -93,13 +93,18 @@ const GoAdvanced = () => {
                     Képzésre való jelentkezés előfeltétele a Go Basic kurzus elvégzése, vagy Golangben egy alapszintű jártasság.
                     Tananyag feltételez egy alap Go programozásinyelv ismeretet.
                 </p>
-                <p className="font-light text-sm pb-10">
+                <p className="font-bold text-sm pb-10">
+                    A Go Advanced online képzés ebben a formában a közeljövőben nem kerül megrendezésre.
+                    Helyette a robot_dreams szervezésében indul egy hasonló témájú online kurzus.
+                    Amennyiben érdekel, az alábbi linken tudsz jelentkezni: <a href="https://robotdreams.hu/course/156-golang-bootcamp?s=fp" className="text-blue-600">Golang Bootcamp</a>
+                </p>
+                {/* <p className="font-light text-sm pb-10">
                     Kurzus során heti 1 alkalommal van 2 órás online előadás videóhíváson keresztül.
                     Ehhez tartozik órai munka és önállóan elvégzendő feladatok is,
                     amelyeket az egész modulon keresztül futó projektfeladat keretein belül kell implementálni.
                     Valamennyi előadás felvételre kerül, amely elérhető a diákoknak az órák után.
-                </p>
-                <div className="flex justify-center pt-8 font-light">
+                </p> */}
+                {/* <div className="flex justify-center pt-8 font-light">
                     <PricingBox
                         title="Go Advanced"
                         subtitle="Sajátítsd el a Go nyelvet gyorsan és hatékonyan!"
@@ -132,16 +137,16 @@ const GoAdvanced = () => {
                             </PricingBox.Feature>
                         </PricingBox.Content>
                     </PricingBox>
-                </div>
+                </div> */}
             </Section>
-            <Section id="contact" className="pb-8">
+            {/* <Section id="contact" className="pb-8">
                 <Section.Title className="title">Jelentkezz a következő Golang képzésre!</Section.Title>
                 <ContactForm
                     defaultMessage={`Kedves Follow The Pattern!
         
 Szeretnék jelentkezni a hamarosan induló Go Advanced képzésre!`}
                 />
-            </Section>
+            </Section> */}
             <Footer />
         </>
     );

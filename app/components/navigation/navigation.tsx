@@ -79,7 +79,7 @@ export default function Navigation() {
                             )
                         }
                         return (
-                            <Link key={item.name} href={item.href} className={navbarItemClassName}>
+                            <Link key={item.name} href={item.href} className={navbarItemClassName} onClick={() => setMobileMenuOpen(false)}>
                                 {item.name}
                             </Link>
                         )

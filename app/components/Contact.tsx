@@ -13,6 +13,7 @@ import Spin from "@/icons/Spin";
 interface ContactProperties {
   defaultMessage?: any;
   classNames?: string;
+  hun?: boolean;
 }
 
 type FormData = {
@@ -114,7 +115,7 @@ const ContactForm = (props: ContactProperties) => {
       <div className="grid grid-cols-1 gap-y-6">
         <div>
           <label htmlFor="name" className={labelClassnames}>
-            Name
+            {props.hun ? "Név" : "Name"}
           </label>
           <div className="mt-2">
             <input
@@ -139,7 +140,7 @@ const ContactForm = (props: ContactProperties) => {
         </div>
         <div className="">
           <label htmlFor="message" className={labelClassnames}>
-            Message
+            {props.hun ? "Üzenet" : "Message"}
           </label>
           <div className="mt-2">
             <textarea
@@ -158,7 +159,7 @@ const ContactForm = (props: ContactProperties) => {
           className="flex w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center justify-center font-semibold text-white shadow-sm hover:bg-blue-700"
           disabled={sendingMessage}
         >
-          {!sendingMessage && "Send message"}
+          {!sendingMessage && (props.hun ? "Küldés" : "Send Message")}
           {sendingMessage && <Spin className="w-6 h-6 text-gray-200 animate-spin fill-white" />}
         </button>
       </div>

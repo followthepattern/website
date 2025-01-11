@@ -1,5 +1,5 @@
 
-import ContactForm from "@/app/(public)/contact/components/Contact";
+import ContactForm from "@/app/components/Contact";
 import PricingBox from "../../components/PricingBox";
 import Timeline from "../../components/Timeline";
 import Link from "next/link";

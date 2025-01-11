@@ -1,5 +1,5 @@
-import { Metadata } from "next"
-import Navigation from "../components/navigation/navigation"
+import { Metadata } from "next";
+import Navigation from "./components/navigation";
 
 export const metadata: Metadata = {
     description: 'Solutions in software development 2',

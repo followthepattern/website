@@ -73,11 +73,11 @@ const PodcastAdsPage = () => {
                 </Title>
                 <ul className="pt-6">
                     <li>
-                        <p className="font-medium">Külön álló short videó Youtube és TikTok csatornán</p>
+                        <p className="font-medium">Külön álló egy perces videó Youtube és TikTok csatornán</p>
                         <p>Leírás</p>
                     </li>
                     <li className="pt-4">
-                        <p className="font-medium">Külön álló rövid videó Youtube csatornán</p>
+                        <p className="font-medium">Külön álló 10 - 15 perces videó Youtube csatornán</p>
                         <p>Leírás</p>
                     </li>
                     <li className="pt-4">

@@ -103,6 +103,9 @@ const PodcastAdsPage = () => {
                     <li className="pt-4">
                         <p className="font-medium">Több platformon is elérhetőek vagyunk</p>
                     </li>
+                    <li className="pt-4">
+                        <p className="font-medium">Segítünk analitika integrációjában</p>
+                    </li>
                 </ul>
             </Section>
             <Section>

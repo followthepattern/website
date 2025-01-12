@@ -1,7 +1,6 @@
 import Section from "@/app/components/section";
-import PricingBox from "../../components/PricingBox";
+// import PricingBox from "../../components/PricingBox";
 import Timeline from "../../components/Timeline";
-import ContactForm from "@/app/(public)/contact/components/Contact";
 import Link from "next/link";
 import { RectangleBackground } from "@/app/components/patternBackground";
 import Footer from "@/app/components/footer";

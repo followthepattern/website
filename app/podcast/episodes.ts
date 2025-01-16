@@ -213,5 +213,17 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast16.mp3",
         type: "audio/mpeg"
     }
+}, {
+    id: "17",
+    title: "Mr Olympia felkészülés",
+    guest: "Nagy Richárd, Kovács Martin",
+    lang: "HUN",
+    playing: false,
+    description: `Nagy Richárd IFBB Pro testépítő versenyző és Kovács Martin felkészítő edző a vendégem. Nagy Richárd a Mr Olimpián bekerült a top 20 helyezett közé, Mr Olympia lényegében a testépítés olimpiája. Felkészülésről és a versenyről fogunk beszélni. De ebben az epizódban elhangzik, nagyon sok olyan információ, amit a mindennapjaink során mi is feltudunk használni.`,
+    published: "4 Jan 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast17.mp3",
+        type: "audio/mpeg"
+    }
 }
 ]

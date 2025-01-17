@@ -30,13 +30,11 @@ const PodcastAdsPage = () => {
             >
                 <div className="md:basis-1/2">
                     <h1 className="text-left text-neutral-800 text-5xl font-medium sm:text-6xl xl:text-7xl">
-                        Érd el a vásárlóidat hatékonyan!
+                        <span className="">Podcast</span> hirdetések az <span className="text-blue-600">1,2 milliárd</span> dolláros siker mögött
                     </h1>
-                    <p className="text-3xl pt-6 sm:mt-12">
-                        A <span className={classNames("font-medium", youtubeColor)}>Youtube Prémium</span> előfizetők száma évente 1.2 millió felhasználóval növekszik!
-                    </p>
-                    <p className="text-3xl pt-6">
-                        Ők nem fognak <span className="line-through decoration-rose-600">Youtube reklámokat</span> nézni!
+                    <p className="pt-6 text-lg">
+                    Az Athletic Greens növekedési stratégiájában a podcast hirdetések kiemelkedő szerepet játszottak, hiteles tartalommal és célzott eléréssel megszólítva a vásárlókat.
+                    Hasonló példák száma folyamatosan növekszik, mivel a hagyományos televíziózás egyre inkább háttérbe szorul a Youtube mellett.
                     </p>
                 </div>
                 <div className="hidden md:block md:basis-1/2">
@@ -50,7 +48,10 @@ const PodcastAdsPage = () => {
                 <p className="pt-6">Lineáris TV nézés ideje lejárt! Ez ugyanúgy igaz a rádiózásra.
                     Az embereknek megmaradt az igénye a szórkoztató és informatiív tartalom fogyasztására,
                     amit internetes műsorokon keresztül fog pótolni. Ennek az első számú platformja a Youtube!</p>
-                <p className="pt-6">Youtube hosszú távon a prémium előfizetőket támogatja, ezzel a hagyományos youtube hirdetések háttérbe fognak szorulni.</p>
+                <p className="pt-6">Youtube hosszú távon a prémium előfizetőket támogatja,
+                a <span className={classNames("font-medium", youtubeColor)}>Youtube Prémium</span> előfizetők száma évente 1.2 millió felhasználóval növekszik!
+                    ezzel a hagyományos youtube hirdetések háttérbe fognak szorulni.</p>
+                    Ők nem fognak <span className="line-through decoration-rose-600">Youtube reklámokat</span> nézni!
                 <p>Erre kínál a Follow The Pattern Podcast, tudományos és ismeretterjesztő internetes műsor megoldást.</p>
                 <ul className="pt-6">
                     <li>

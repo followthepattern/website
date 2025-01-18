@@ -14,6 +14,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        "youtube": "#f00",
+      },
       spacing: {
         18: '4.5rem',
         112: '28rem',

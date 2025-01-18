@@ -2,8 +2,6 @@ import { HTMLAttributes } from "react";
 import classNames from "classnames";
 import ContactForm from "../components/Contact";
 
-const youtubeColor = "text-[#f00]";
-
 const Title = (props: HTMLAttributes<HTMLElement>) => {
     return (<h1
         {...props}
@@ -15,7 +13,7 @@ const Title = (props: HTMLAttributes<HTMLElement>) => {
 
 const Section = (props: HTMLAttributes<HTMLElement>) => {
     return (
-        <section className={classNames("mx-auto max-w-5xl px-6 pb-8 sm:pb-16 pt-16 sm:pt-24 lg:px-8 lg:pt-32", props.className)}
+        <section className={classNames("mx-auto max-w-5xl px-6 pt-12 sm:pt-24 lg:px-8 lg:pt-32", props.className)}
             id={props.id}
         >
             {props.children}
@@ -26,16 +24,19 @@ const Section = (props: HTMLAttributes<HTMLElement>) => {
 const PodcastAdsPage = () => {
     return (
         <div className="text-neutral-800">
-            <header className="flex flex-row mx-auto max-w-5xl px-6 pb-8 pt-2 sm:pt-8 lg:px-8 xl:pt-16"
+            <header className="flex flex-row mx-auto max-w-5xl px-6 pt-2 sm:pt-8 lg:px-8 xl:pt-16"
             >
                 <div className="md:basis-1/2">
-                    <h1 className="text-left text-neutral-800 text-5xl font-medium sm:text-6xl xl:text-7xl">
+                    <h1 className="text-left text-5xl font-medium sm:text-6xl xl:text-7xl">
                         <span className="">Podcast</span> hirdetések az <span className="text-blue-600">1,2 milliárd</span> dolláros siker mögött
                     </h1>
                     <p className="pt-6 text-lg">
-                    Az Athletic Greens növekedési stratégiájában a podcast hirdetések kiemelkedő szerepet játszottak, hiteles tartalommal és célzott eléréssel megszólítva a vásárlókat.
-                    Hasonló példák száma folyamatosan növekszik, mivel a hagyományos televíziózás egyre inkább háttérbe szorul a Youtube mellett.
+                        Az <span className="font-medium">Athletic Greens</span> növekedési stratégiájában a podcast hirdetések kiemelkedő szerepet játszottak, hiteles tartalommal és célzott eléréssel megszólítva a vásárlókat.
                     </p>
+                    <p className="pt-4 text-lg">
+                        Hasonló példák száma folyamatosan növekszik, mivel a hagyományos televíziózás egyre inkább háttérbe szorul a <span className="font-medium text-youtube">Youtube</span> mellett.
+                    </p>
+
                 </div>
                 <div className="hidden md:block md:basis-1/2">
 
@@ -43,16 +44,16 @@ const PodcastAdsPage = () => {
             </header>
             <Section>
                 <Title>
-                    Hirdess Szórakoztató és Informatív Tartalommal!
+                    Hirdess <span className="">Szórakoztató</span> és <span className="">Informatív</span> Tartalommal!
                 </Title>
-                <p className="pt-6">Lineáris TV nézés ideje lejárt! Ez ugyanúgy igaz a rádiózásra.
-                    Az embereknek megmaradt az igénye a szórkoztató és informatiív tartalom fogyasztására,
-                    amit internetes műsorokon keresztül fog pótolni. Ennek az első számú platformja a Youtube!</p>
-                <p className="pt-6">Youtube hosszú távon a prémium előfizetőket támogatja,
-                a <span className={classNames("font-medium", youtubeColor)}>Youtube Prémium</span> előfizetők száma évente 1.2 millió felhasználóval növekszik!
-                    ezzel a hagyományos youtube hirdetések háttérbe fognak szorulni.</p>
-                    Ők nem fognak <span className="line-through decoration-rose-600">Youtube reklámokat</span> nézni!
-                <p>Erre kínál a Follow The Pattern Podcast, tudományos és ismeretterjesztő internetes műsor megoldást.</p>
+                <p className="pt-4 text-xl">Lineáris TV nézés ideje lejárt!</p>
+                <p className="pt-4 font-light">Ez ugyanúgy igaz a rádiózásra is. Az emberek igénye a szórakoztató és informatív tartalmak fogyasztására továbbra is megmaradt, de ezt egyre inkább internetes műsorokon keresztül elégítik ki.</p>
+                <p className="pt-2">Az első számú platform erre a <span className="">YouTube</span>.</p>
+                <p className="pt-4 text-xl">A <span className="text-youtube font-medium">YouTube</span> hosszú távon a <span className="">Prémium</span> előfizetőket helyezi előtérbe.</p>
+                <p className="pt-4 font-light">Prémium előfizetők száma évente 1,2 millióval növekszik, ezzel a hagyományos YouTube hirdetések egyre inkább háttérbe szorulnak.</p>
+                <p className="pt-2">Ők nem fognak reklámokat nézni!</p>
+                <p className="pt-4 text-xl">Erre kínál megoldást a Follow The Pattern Podcast</p>
+                <p className="pt-2 font-light">Tudományos és ismeretterjesztő internetes műsor, amely hatékonyan elérheti ezt a hirdetésekre immunis közönséget.</p>
                 <ul className="pt-6">
                     <li>
                         <p className="font-medium">Különböző témákban hívunk, meg szakértőket</p>

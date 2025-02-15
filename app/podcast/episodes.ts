@@ -225,5 +225,17 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast17.mp3",
         type: "audio/mpeg"
     }
+}, {
+    id: "18",
+    title: "Mitől jó egy diéta",
+    guest: "Kovács Martin",
+    lang: "HUN",
+    playing: false,
+    description: `Kovács Martin felkészítő edző a vendégem, táplálkozás tudományról fogunk beszélni. Szigorúan gyakorlatias megközelítéssel. Több magas szintű testépítő is felügyelete alatt készül versenyekre, ezzel az országban az egyik legeredményesebb edző.`,
+    published: "31 Jan 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast18.mp3",
+        type: "audio/mpeg"
+    }
 }
 ]

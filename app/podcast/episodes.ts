@@ -225,5 +225,31 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast17.mp3",
         type: "audio/mpeg"
     }
-}
+}, {
+    id: "18",
+    title: "Mitől jó egy diéta",
+    guest: "Kovács Martin",
+    lang: "HUN",
+    playing: false,
+    description: `Kovács Martin felkészítő edző a vendégem, táplálkozás tudományról fogunk beszélni. Szigorúan gyakorlatias megközelítéssel. Több magas szintű testépítő is felügyelete alatt készül versenyekre, ezzel az országban az egyik legeredményesebb edző.`,
+    published: "31 Jan 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast18.mp3",
+        type: "audio/mpeg"
+    },
+}, {
+    id: "19",
+    title: "Magyar Falu Indonéziában",
+    guest: "Róka Zoltán",
+    lang: "HUN",
+    playing: false,
+    description: `
+    Róka Zoltán, a Sumba Paradise tulajdonosa, a vendégem. Magyarországtól 10 000 km-re, Sumba szigetén egy több mint hatvan házból álló üdülőhelyet épít. A történet érdekessége, hogy minden befektető magyar, ezért joggal nevezhetjük “magyar falunak.”
+    Vendégem mesélni fog arról, hogy hogyan és miért választotta Sumba szigetét. Beszámol sikereiről és kihívásairól, amelyeket nemcsak a nagy távolság, hanem a kulturális különbségek is okozhatnak.
+    `,
+    published: "28 Feb 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast19.mp3",
+        type: "audio/mpeg"
+    }}
 ]

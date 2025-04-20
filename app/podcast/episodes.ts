@@ -251,5 +251,18 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
     audio: {
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast19.mp3",
         type: "audio/mpeg"
-    }}
+    },
+}, {
+    id: "20",
+    title: "Emberi élő erő fog problémát okozni",
+    guest: "Bendarzsevszkij Anton",
+    lang: "HUN",
+    playing: false,
+    description: `Bendarzsevszkij Anton külpolitikai elemző a vendégem, akivel az Orosz Ukrán háborút fogjuk elemezni. Szó lesz a  felek stratégiájáról, továbbá Trump megválasztásának hatásairól és a többi nagy hatalom reakciójáról. És beszélni fogunk a háborúban felhasznált modern technológiákról, amit máshol még kevésbé használtak.`,
+    published: "14 Mar 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast20.mp3",
+        type: "audio/mpeg"
+    },
+}
 ]

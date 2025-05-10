@@ -60,6 +60,44 @@
   }
 }
 
+@layer components {
+  .md ul {
+    @apply pl-2;
+  }
+
+  .md ul ul {
+    @apply pl-4;
+  }
+
+  .md ul ul ul {
+    @apply pl-6;
+  }
+
+  .md ul ul ul ul {
+    @apply pl-8;
+  }
+
+  .md ol {
+    @apply list-decimal pl-4 mb-4;
+  }
+
+  .md ol ol {
+    @apply pl-6;
+  }
+
+  .md ol ol ol {
+    @apply pl-8;
+  }
+
+  .md :not(pre)>code {
+    @apply bg-blue-50 px-1 py-0.5 rounded-lg;
+  }
+
+  .md pre {
+    @apply bg-blue-950 text-white p-6 rounded-lg overflow-x-auto;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

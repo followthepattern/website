@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import profile from "../../../img/profile.jpg"
+import profile from "../../../img/profile.png"
 import Image from "next/image";
 
 interface ProfileProperites {

@@ -67,11 +67,10 @@ export default function Home() {
         <Section.Title>
           The Concept Behind<span className="py-1 px-1.5 mx-2 text-blue-950 bg-blue-50 border border-gray-900/20 rounded-lg inline-block">Follow The Pattern</span>
         </Section.Title>
-        <p className="font-light sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto text-center">
-          With nearly a decade of experience in IT, we have encountered a wide range of obstacles and challenges.
-          Many of these are not entirely unique, allowing their solutions to be organized into thematic patterns.
-          We have witnessed many scenarios and developed numerous patterns.
-          Work with us, and we will share our wealth of knowledge and solutions with you.
+        <p className="font-light sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto text-center sm:text-lg">
+          With over a decade of experience in software engineering, we’ve encountered a wide range of challenges—many of which follow common patterns.
+
+          Not every problem is unique. Over time, we’ve identified recurring themes and built reliable, reusable solutions around them.
         </p>
       </Section>
       <Section id="features">
@@ -79,7 +78,7 @@ export default function Home() {
           Stay At the Top of the Industry
         </Section.Title>
         <Section.Subtitle className="mb-10">
-          Utilizing the Best Tools and Mastering the Latest Technologies is Key to Achieving This.
+          Utilizing the Best Tools and Mastering the Latest Technologies is Key
         </Section.Subtitle>
         <div className="mt-12 space-y-4 sm:space-y-8 max-w-lg lg:max-w-none mx-auto lg:space-x-8 lg:space-y-0 lg:flex justify-center">
           <Card>
@@ -145,9 +144,12 @@ export default function Home() {
         <div className="flex justify-center">
           <Profile />
         </div>
-        <p className="text-center text-lg">Csaba Zsolt Huszka</p>
+        <p className="text-center text-lg">Csaba Huszka</p>
         <p className="text-center max-w-lg lg:max-w-xl mx-auto font-light">
-          I am dedicated to building solutions that not only meet current needs but are also adaptable, sustainable for the long term, and built upon the latest technological advancements.
+          I’m the founder of FollowThePattern and a software engineer focused on building applications that leverage modern
+          technologies—including AI—to streamline processes and enable faster execution.
+          With over a decade of software development experience across domains like test automation,
+          scalable microservices, and event-driven systems, I focus on delivering solutions for companies that want to move fast.
         </p>
         <Socials className="justify-center" />
       </Section>

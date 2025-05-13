@@ -32,7 +32,7 @@ export default function Footer(props: FooterProperties) {
                     <div className="space-y-8">
                         <FPIcon className="h-10 w-10 text-blue-500" />
                         <p className="text-sm leading-6 text-gray-600 font-light">
-                            Crafting Modern Web Applications for Smarter Solutions.
+                            Building applications that enable companies to do more
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-8 mt-10">

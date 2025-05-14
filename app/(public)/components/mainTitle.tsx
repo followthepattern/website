@@ -6,7 +6,7 @@ interface MainTitleProperties {
     className?: string
 }
 
-const values = ["modern", "reliable", "robust"];
+const values = ["do more", "move faster", "scale"];
 const clsNames = ["text-blue-500", "text-red-500", "text-yellow-500"];
 
 function getCurrent<T>(array: T[], count: number): T {
@@ -19,7 +19,7 @@ export default function MainTitle(props: MainTitleProperties) {
 
     return (
         <h1 className={classNames(props.className, "")}>
-            <span className="block mr-3">We engineer</span>
+            <span className="block mr-3">Helping companies</span>
             <motion.span
                 key={props.count}
                 initial={{ y: 10, opacity: 0 }}
@@ -30,7 +30,7 @@ export default function MainTitle(props: MainTitleProperties) {
             >
                 {value}
             </motion.span>
-            <span className="block">applications</span>
+            <span className="block">through software</span>
         </h1>
     )
 }

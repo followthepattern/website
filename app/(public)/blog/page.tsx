@@ -8,7 +8,7 @@ export default function Blog() {
         <header className="sm:mx-auto sm:max-w-3xl">
             <RectangleBackground className="lg:flex">
                 <div className="space-y-8">
-                    <h1 className="font-medium pt-10 text-6xl sm:text-6xl md:text-7xl md:mx-2 2xl:text-8xl">
+                    <h1 className="font-medium pt-10 text-6xl sm:text-6xl md:text-7xl md:mx-2">
                         Build With Purpose
                     </h1>
                     <p className="text-lg font-light">

@@ -19,7 +19,7 @@ interface DrawerDisclosureProperties {
     name: string
     navigation: NavigationItem[]
     pathName: string
-
+    setMobileMenuOpen: (b: boolean) => void
 }
 
 function DrawerDisclosure(props: DrawerDisclosureProperties) {
@@ -44,6 +44,7 @@ function DrawerDisclosure(props: DrawerDisclosureProperties) {
                                     "text-gray-900": props.pathName != item.href,
                                     "text-blue-600": props.pathName == item.href,
                                 })}
+                                onClick={() => props.setMobileMenuOpen(false)}
                             >
                                 {item.name}
                             </Link>
@@ -79,7 +80,7 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
                         {props.navigation.map((item) => {
                             if (item.children) {
                                 return (
-                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} />
+                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} setMobileMenuOpen={props.setMobileMenuOpen}/>
                                 )
                             }
 
@@ -92,6 +93,7 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
                                         { "text-blue-900": pathName == item.href },
                                         { "text-gray-900": pathName != item.href }
                                     )}
+                                    onClick={() => props.setMobileMenuOpen(false)}
                                 >
                                     {item.name}
                                 </Link>

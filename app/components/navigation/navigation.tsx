@@ -18,46 +18,47 @@ export interface NavigationItem {
 
 const navigation : NavigationItem[] = [
     {
-        name: 'Learning', href: '#', children: [
+        name: 'Courses', href: '#', children: [
+            {
+                name: "Go Basic",
+                href: "/learn/en/gobasic",
+                description: 'Learn to develop applications and web services in Golang in a practical way'
+            },
+            {
+                name: "Go Advanced",
+                href: "/learn/en/goadvanced",
+                description: 'Become a master of Generics and Concurrency in the Go programming language'
+            },
             // {
-            //     name: "Go Basic ENG",
-            //     href: "/learn/en/gobasic",
-            //     description: 'Learn to develop applications and web services in Golang in a practical way'
+            //     name: "Go Basic HUN",
+            //     href: "/learn/hu/gobasic",
+            //     description: 'Tanulj gyakorlatias úton alkalmazásokat és webszervízeket fejleszteni Golangben'
             // },
             // {
-            //     name: "Go Advanced ENG",
-            //     href: "/learn/en/goadvanced",
-            //     description: 'Become a master of Generics and Concurrency in the Go programming language'
+            //     name: "Go Advanced HUN",
+            //     href: "/learn/hu/goadvanced",
+            //     description: 'Legyél a Generics és a Concurrency mestere a Go programozási nyelvben'
             // },
-            {
-                name: "Go Basic HUN",
-                href: "/learn/hu/gobasic",
-                description: 'Tanulj gyakorlatias úton alkalmazásokat és webszervízeket fejleszteni Golangben'
-            },
-            {
-                name: "Go Advanced HUN",
-                href: "/learn/hu/goadvanced",
-                description: 'Legyél a Generics és a Concurrency mestere a Go programozási nyelvben'
-            },
         ]
     },
-    {
-        name: 'Explore & Code', href: '#', children: [
-            {
-                name: "WIKI",
-                href: "https://wiki.followthepattern.net/",
-                description: 'Enhance your skills with Golang practices',
-                target: "_blank"
-            },
-            {
-                name: "Go Playground",
-                href: "https://goplay.followthepattern.net/",
-                description: 'Run and Share your Go code in the browser with built-in IntelliSense',
-                target: "_blank"
-            },
-        ]
-    },
+    // {
+    //     name: 'Explore & Code', href: '#', children: [
+    //         {
+    //             name: "WIKI",
+    //             href: "https://wiki.followthepattern.net/",
+    //             description: 'Enhance your skills with Golang practices',
+    //             target: "_blank"
+    //         },
+    //         {
+    //             name: "Go Playground",
+    //             href: "https://goplay.followthepattern.net/",
+    //             description: 'Run and Share your Go code in the browser with built-in IntelliSense',
+    //             target: "_blank"
+    //         },
+    //     ]
+    // },
     { name: 'Podcast', href: '/podcast' },
+    { name: 'Blog', href: '/blog' },
 ]
 
 export default function Navigation() {

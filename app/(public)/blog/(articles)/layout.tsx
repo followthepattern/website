@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Contact from "../components/contact"
  
 export default function BlogLayout({
     children, // will be a page or nested layout
@@ -14,7 +13,6 @@ export default function BlogLayout({
                 {/* Include shared UI here e.g. a header or sidebar */}
                 {children}
             </ div>
-            <Contact />
         </>
     )
 }

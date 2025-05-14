@@ -7,7 +7,7 @@ export default function CTAButton(props: React.AnchorHTMLAttributes<HTMLAnchorEl
             href="/contact"
             className={classNames(props.className, "rounded-lg bg-blue-600 px-3 py-3 font-semibold text-white shadow-sm hover:bg-blue-700")}
         >
-            {props.children ?? "Build with Us!" }
+            {props.children ?? "Build With Us!" }
         </Link>
     )
 }

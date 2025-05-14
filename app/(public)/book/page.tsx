@@ -9,9 +9,9 @@ const Contact = () => {
         <>
             <header className="text-lg mx-auto max-w-7xl px-6 pb-8 sm:pb-16 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
                 <PatternBackground hideRectangles={true}>
-                    <h1 className="text-center pt-10 text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl font-medium">Let's Connect!</h1>
+                    <h1 className="text-center pt-10 text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl font-medium">Let{"'"} Connect!</h1>
                     <h2 className="mx-auto max-w-sm sm:max-w-none text-center pt-10 text-lg md:text-xl 2xl:text-xl">
-                        Have questions or want to discuss your ideas? Book a free 30-minute call with us and let's chat!
+                        Have questions or want to discuss your ideas? Book a free 30-minute call with us and Let{"'"} chat!
                     </h2>
                 </PatternBackground>
             </header>

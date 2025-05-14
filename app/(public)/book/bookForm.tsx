@@ -7,7 +7,7 @@ const BookForm = () => {
     return (
         <Section>
             <Section.Title>
-                Let's Connect!
+                Let{"'"} Connect!
             </Section.Title>
             <Section.Subtitle className="mb-16 sm:mb-20">
                 Have questions or want to discuss your ideas? Book a free 30-minute call with us and let{"'"}s chat!

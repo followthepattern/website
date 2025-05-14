@@ -130,10 +130,10 @@ export default function Home() {
       <div className=" bg-gradient-to-br from-blue-600 to-cyan-500">
         <Section>
           <Section.Title className="text-white">
-            Let's Connect
+            Let{"'"} Connect
           </Section.Title>
           <Section.Subtitle className="text-white pb-10">
-            Have questions or want to discuss your ideas? Book a free 30-minute call with us and let's chat!
+            Have questions or want to discuss your ideas? Book a free 30-minute call with us and Let{"'"} chat!
           </Section.Subtitle>
           <div className="flex justify-center">
             <Link href={FreeCallLink} target="_blank" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">

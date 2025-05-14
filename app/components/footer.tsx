@@ -11,8 +11,8 @@ const navigation = {
         { name: 'Contact', href: '/contact' },
     ],
     courses: [
-        { name: 'Go Basic HUN', href: '/learn/hu/gobasic' },
-        { name: 'Go Advanced HUN', href: '/learn/hu/goadvanced' },
+        { name: 'Go Basic', href: '/learn/en/gobasic' },
+        { name: 'Go Advanced', href: '/learn/en/goadvanced' },
     ],
 }
 

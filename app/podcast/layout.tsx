@@ -231,12 +231,11 @@ export default function PodcastLayout({ children }: PodcastLayoutProperties) {
                     <AboutSection className="hidden mt-12 lg:block" />
                     <section className="lg:mt-12">
                         <div className="h-px mt-12 bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden" />
-                        <JoinDiscord />
                         <ListenSidebar />
                         <LearnMoreSidebar />
                     </section>
                     <Link href="/">
-                        <div className="mt-5 text-sm font-medium text-gray-900/70 text-center lg:hidden hover:text-blue-700 active:text-blue-900">visit website</div>
+                        <div className="mt-5 text-sm font-medium text-gray-900/70 text-center lg:hidden hover:text-blue-700 active:text-blue-900">Back To Home</div>
                     </Link>
                 </div>
             </header>

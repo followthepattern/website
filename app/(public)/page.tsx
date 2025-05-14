@@ -136,7 +136,7 @@ export default function Home() {
             Have questions or want to discuss your ideas? Book a free 30-minute call with us and let's chat!
           </Section.Subtitle>
           <div className="flex justify-center">
-            <Link href={FreeCallLink} className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
+            <Link href={FreeCallLink} target="_blank" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
               Book a Free Call
             </Link>
           </div>

@@ -5,15 +5,14 @@ import Link from "next/link"
 
 const navigation = {
     company: [
-        { name: 'Go Basic HUN', href: '/learn/hu/gobasic' },
-        { name: 'Go Advanced HUN', href: '/learn/hu/goadvanced' },
+        { name: 'Book a Free Call', href: '/book' },
+        { name: 'Blog', href: '/blog' },
         { name: 'Podcast', href: '/podcast' },
         { name: 'Contact', href: '/contact' },
     ],
-    legal: [
-        { name: 'Privacy', href: '#' },
-        { name: 'Terms', href: '#' },
-        { name: 'Impressum', href: '#' },
+    courses: [
+        { name: 'Go Basic HUN', href: '/learn/hu/gobasic' },
+        { name: 'Go Advanced HUN', href: '/learn/hu/goadvanced' },
     ],
 }
 
@@ -49,9 +48,9 @@ export default function Footer(props: FooterProperties) {
                             </ul>
                         </div>
                         <div className="">
-                            <h3 className="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+                            <h3 className="text-sm font-semibold leading-6 text-gray-900">Courses</h3>
                             <ul role="list" className="mt-6 space-y-4">
-                                {navigation.legal.map((item) => (
+                                {navigation.courses.map((item) => (
                                     <li key={item.name}>
                                         <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                                             {item.name}

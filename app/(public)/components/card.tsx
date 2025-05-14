@@ -1,18 +1,19 @@
 import RightArrowIcon from "@/icons/RightArrowIcon";
 import classNames from "classnames";
 import Link from "next/link";
-import { HTMLAttributes } from "react";
+import { HTMLAttributeAnchorTarget, HTMLAttributes } from "react";
 
 interface CardLinkProperties {
     className?: string,
     children?: any,
     href: string,
+    target?: HTMLAttributeAnchorTarget,
 }
 
 function CardLink(props: CardLinkProperties) {
     return (
-        <Link className={classNames(props.className, "text-sm inline-block text-blue-600 font-semibold")} href={props.href}>
-            <span className="flex">
+        <Link className={classNames(props.className, "text-sm inline-block font-semibold")} href={props.href} target={props.target}>
+            <span className="flex rounded-lg p-3 bg-neutral-100 group-hover:bg-gray-200">
                 {props.children}
                 <RightArrowIcon className="ml-2 w-5 h-5" />
             </span>
@@ -38,7 +39,7 @@ function Body(props: HTMLAttributes<HTMLElement>) {
 
 function Title(props: HTMLAttributes<HTMLElement>) {
     return (
-        <p className={classNames(props.className, "group-hover:text-blue-600 text-xl flex-none")} {...props}>
+        <p className={classNames(props.className, "text-xl flex-none")} {...props}>
             {props.children}
         </p>
     )
@@ -46,7 +47,7 @@ function Title(props: HTMLAttributes<HTMLElement>) {
 
 export default function Card(props: HTMLAttributes<HTMLElement>) {
     return (
-        <div className={classNames(props.className, "group flex flex-col hover:bg-gray-50 hover:shadow-sm space-y-6 md:space-y-12 rounded-md border border-gray-200 p-4 lg:w-96")} {...props}>
+        <div className={classNames(props.className, "group hover:bg-gray-50 flex flex-col shadow-md space-y-6 md:space-y-12 rounded-lg border border-gray-200 p-4 lg:w-96")} {...props}>
             {props.children}
         </div>
     )

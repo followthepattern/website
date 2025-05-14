@@ -3,8 +3,8 @@ import './globals.css'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Follow The Pattern',
-  description: 'Solutions in software development',
+  title: 'Follow The Pattern - Building Modern Apps',
+  description: 'We deliver applications that enable companies to do more',
 }
 
 export default function RootLayout({

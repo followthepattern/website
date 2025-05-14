@@ -11,7 +11,7 @@ function Title(props: HTMLAttributes<HTMLElement>) {
 
 function Subtitle(props: HTMLAttributes<HTMLElement>) {
     return (
-        <h2 className={classNames(props.className, "mb-6 font-light sm:text-lg sm:max-w-lg text-center sm:mx-auto")}>
+        <h2 className={classNames(props.className, "mb-6 font-light text-lg sm:max-w-lg sm:mx-auto")}>
             {props.children}
         </h2>
     )
@@ -19,7 +19,7 @@ function Subtitle(props: HTMLAttributes<HTMLElement>) {
 
 export default function Section(props: HTMLAttributes<HTMLElement>) {
     return (
-        <section className={classNames("mx-auto max-w-7xl px-6 pb-8 sm:pb-16 pt-16 sm:pt-24 lg:px-8 lg:pt-32", props.className)}
+        <section className={classNames("text-lg mx-auto max-w-7xl px-6 pb-8 sm:pb-16 pt-16 sm:pt-24 lg:px-8 lg:pt-32", props.className)}
             id={props.id}
         >
             {props.children}

@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -35,7 +35,6 @@ export default function Episode() {
                 <ul className="list-none list-inside list-dec">
                     <li>Kövesd Martint <PodcastLink href="https://www.instagram.com/kovacsmartin24/">instagrammon</PodcastLink></li>
                     <li>Nézd meg Kovács Martin szolgáltatásait <PodcastLink href="https://testepites.pro/">testepitos.pro</PodcastLink> weboldalon</li>
-                    <FPDiscordLinkHUN />
                 </ul>
             </div>
         </EpisodeBody>

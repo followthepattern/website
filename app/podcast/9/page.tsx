@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLink, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -34,7 +34,6 @@ export default function Episode() {
             <div className="mt-3 font-light leading-7 text-slate-700">
                 <ul className="list-none list-inside list-dec">
                     <li><PodcastLink href="https://nordconn.se/en/">Nordconn</PodcastLink></li>
-                    <FPDiscordLink />
                 </ul>
             </div>
         </EpisodeBody>

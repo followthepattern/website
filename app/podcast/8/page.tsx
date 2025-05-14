@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -35,7 +35,6 @@ export default function Episode() {
                 <ul className="list-none list-inside list-dec">
                     <li><PodcastLink href="https://en.wikipedia.org/wiki/Dirac_large_numbers_hypothesis">Dirac large numbers hypothesis</PodcastLink></li>
                     <li><PodcastLink href="http://www.agt.bme.hu/volgyesi/gravity/cair_g_t.pdf">Some possible physical reason of time variation of Earth’s gravity field</PodcastLink></li>
-                    <FPDiscordLinkHUN />
                 </ul>
             </div>
         </EpisodeBody>

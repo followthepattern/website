@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLink, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -38,7 +38,6 @@ export default function Episode() {
                     <li>K8s Budapest <PodcastLink href="https://www.meetup.com/k8s-bud/">Meetup</PodcastLink></li>
                     <li>László Fogas <PodcastLink href="https://twitter.com/laszlocph">Twitter</PodcastLink></li>
                     <li>Cloud Native Hungary <PodcastLink href="https://discord.gg/tMD8NFhchh">Discord</PodcastLink></li>
-                    <FPDiscordLink />
                 </ul>
             </div>
         </EpisodeBody>

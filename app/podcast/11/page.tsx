@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLink, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -37,7 +37,6 @@ export default function Episode() {
                     <li>Check out the dagger <PodcastLink href="https://docs.dagger.io/quickstart">quickstart</PodcastLink> documentation</li>
                     <li>Watch the community building things on <PodcastLink href="https://www.youtube.com/@dagger-io">Youtube</PodcastLink></li>
                     <li>Join Dagger <PodcastLink href="https://discord.gg/dagger-io">Discord</PodcastLink></li>
-                    <FPDiscordLink />
                 </ul>
             </div>
         </EpisodeBody>

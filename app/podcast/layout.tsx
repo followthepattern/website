@@ -176,7 +176,7 @@ function AboutSection(props: any) {
                 <p
                     className={classNames("mt-2 font-light leading-7 text-slate-700", { "line-clamp-4": !isExpanded })}
                 >
-                    Welcome to the <span className="font-normal text-blue-900/80">#FPPodcast</span>! I am Csaba Huszka, Senior Software Engineer and the visionary behind <Link href="/" className="font-medium hover:text-blue-700 hover:font-medium active:text-blue-900">Follow The Pattern</Link>.
+                    Welcome to the <span className="font-medium text-blue-600">#FP Podcast</span>! I am Csaba Huszka, the founder of the <Link href="/" className="font-medium hover:text-blue-700 text-blue-600 hover:font-medium active:text-blue-900">Follow The Pattern</Link>.
                     With each episode, I will be your host on an insightful journey.
                     Alongside me, I will bring expert guests who have made their mark in various domains.
                     Together, we will explore their careers, tap into their wealth of experience, and exchange knowledge that enriches both us and our listeners.

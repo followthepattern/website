@@ -2,7 +2,6 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLinkHUN } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -31,11 +30,6 @@ export default function Episode() {
                 <Triangle className="w-3 h-3 fill-blue-300" />
                 <span className="ml-2">Links</span>
             </h2>
-            <div className="mt-3 font-light leading-7 text-slate-700">
-                <ul className="list-none list-inside list-dec">
-                    <FPDiscordLinkHUN />
-                </ul>
-            </div>
         </EpisodeBody>
     )
 }

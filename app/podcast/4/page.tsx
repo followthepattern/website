@@ -2,7 +2,7 @@
 
 import Triangle from "@/icons/Triangle";
 import EpisodeBody from "../components/EpisodeBody";
-import { FPDiscordLinkHUN, PodcastLink } from "../components/PodcastLink";
+import { PodcastLink } from "../components/PodcastLink";
 import { episodes } from "../episodes";
 
 export default function Episode() {
@@ -35,7 +35,6 @@ export default function Episode() {
                 <ul className="list-none list-inside list-dec">
                     <li>Orbán Levente <PodcastLink href="https://twitter.com/orbanlevi">Twitter</PodcastLink></li>
                     <li>dyrector.io <PodcastLink href="https://dyrector.io/">website</PodcastLink></li>
-                    <FPDiscordLinkHUN />
                 </ul>
             </div>
         </EpisodeBody>

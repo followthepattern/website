@@ -22,7 +22,7 @@ interface FooterProperties {
 
 export default function Footer(props: FooterProperties) {
     return (
-        <footer className={classNames(props.className, "bg-white")} >
+        <footer className={classNames(props.className, "")} >
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>

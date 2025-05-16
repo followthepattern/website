@@ -23,10 +23,10 @@ export default function Blog() {
                     Articles
                 </Section.Title>
                 <div className="mx-auto sm:max-w-md md:max-w-5xl divide-y sm:divide-y-0 grid grid-cols-1 sm:gap-y-8 md:gap-x-8 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
-                    {articles.map(article => {
+                    {Object.entries(articles).map(([slug, article]) => {
                         return (
                             <Link
-                                href={`/blog/${article.slug}`}
+                                href={`/blog/${slug}`}
                                 className="cursor-pointer"
                             >
                                 <div className="flex rounded-xl sm:shadow-sm sm:bg-slate-50 hover:bg-slate-100 flex-col p-5">

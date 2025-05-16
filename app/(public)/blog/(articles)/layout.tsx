@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import BookForm from '../../book/bookForm'
 import Section from '@/app/components/section'
 import Footer from '@/app/components/footer'

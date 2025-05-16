@@ -114,13 +114,13 @@ export default function Home() {
           </Card>
           <Card>
             <Card.Title>
-              Explore Our Podcasts and Articles
+              Lessons from Building AI-Powered Apps
             </Card.Title>
             <Card.Body>
-              Dive into a Range of Articles and Podcasts on IT, Tech, Business, and Science
+              Explore practical insights, design patterns, and ideas from real-world projects—through our blog articles
             </Card.Body>
             <Card.Footer>
-              <Card.Link href="/podcast">
+              <Card.Link href="/blog">
                 Explore
               </Card.Link>
             </Card.Footer>

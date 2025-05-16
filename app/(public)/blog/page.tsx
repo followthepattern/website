@@ -13,7 +13,7 @@ export default function Blog() {
                     <h1 className="font-medium pt-10 text-6xl sm:text-6xl md:text-7xl">
                         Build With Purpose
                     </h1>
-                    <p className="text-lg font-light">
+                    <p className="text-lg sm:text-xl lg:text-2xl font-light">
                         Lessons, patterns, and ideas from building AI-powered apps.
                     </p>
                 </div>

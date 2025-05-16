@@ -28,6 +28,7 @@ export default function Blog() {
                             <Link
                                 href={`/blog/${slug}`}
                                 className="cursor-pointer"
+                                key={slug}
                             >
                                 <div className="flex rounded-xl sm:shadow-sm sm:bg-slate-50 hover:bg-slate-100 flex-col p-5">
                                     <div className="text-slate-500/70 text-sm pt-2">

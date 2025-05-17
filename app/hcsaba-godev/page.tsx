@@ -205,32 +205,37 @@ const ExperienceSection = () => {
 }
 
 const CV = () => {
+    const techStack = ["Go", "React", "TypeScript", "Databases", "Kafka", "Redis", "Docker", "Linux", "LLM", "Ollama", "OpenAI"]
+
     return (
         <div className="max-w-4xl px-4 mx-auto text-gray-900 sm:px-6 lg:px-8 ">
-            <header className="flex flex-col">
-                <h1 className="mt-10 text-4xl font-bold text-center sm:text-6xl">
+            <header className="flex mt-10 flex-col space-y-10 sm:space-y-14">
+                <h1 className="text-4xl font-bold text-center sm:text-6xl">
                     Csaba Zsolt Huszka
                 </h1>
                 <div className="flex justify-center">
-                    <div className="flex flex-col mt-10 sm:flex-row">
-                        <div className="flex justify-center">
-                            <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
-                        </div>
-                        <div className="mt-2 sm:my-auto">
-                            <div className="text-xl font-medium text-center sm:text-left sm:text-3xl sm:ml-10">
-                                <div className="mb-3">Senior Go Engineer</div>
-                                <div className="mb-3">TypeScript Developer</div>
-                                <div className="">Podcaster</div>
-                            </div>
-                        </div>
+                    <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
+                </div>
+                <div className="mx-auto font-light text-lg max-w-2xl">
+                    <p>I’m the founder of FollowThePattern and a software engineer focused on building applications that
+                        leverage modern technologies—including AI—to streamline processes and enable faster execution.
+                    </p>
+                    <p className="mt-2">
+                        With over a decade of software development experience across domains like test automation, scalable microservices,
+                        and event-driven systems, I focus on delivering solutions for companies that want to move fast.
+                    </p>
+                </div>
+                <div className="mx-auto font-light max-w-2xl cursor-default">
+                    <p className="font-bold text-sm text-gray-900/80 mb-2">current tech stack</p>
+                    <div>
+                        {techStack.map(t => (
+                            <span key={t} className="inline-block bg-blue-100 px-2 py-0.5 m-1 border border-neutral-900 rounded-xl text-md font-bold text-neutral-900/80">
+                                {t}
+                            </span>
+                        ))}
                     </div>
                 </div>
-                <div className="mx-auto mt-10 font-light">
-                    As a Senior Go Engineer with a decade of diverse experience, I specialize in constructing robust web applications across various domains.
-                    My proficiency is not limited to back-end development but also includes front-end and DevOps domains.
-                    I teach Golang and I am also a podcaster. I am always looking for new ways to solve problems.
-                </div>
-                <div className="mx-auto mt-10 space-y-4 sm:space-y-6">
+                <div className="mx-auto space-x-8 flex">
                     <Link className="flex space-x-4" href="/" target="_blank" rel="noreferrer">
                         <FPIcon className="w-10 h-10 fill-blue-500" />
                         <div className="my-auto font-medium">Follow The Pattern</div>

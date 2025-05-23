@@ -264,5 +264,17 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast20.mp3",
         type: "audio/mpeg"
     },
+}, {
+    id: "21",
+    title: "Fekete lyukak, Fehér lyukak, Gravitációs hullámok",
+    guest: "Kis-Tóth Ágnes",
+    lang: "HUN",
+    playing: false,
+    description: `Ebben az epizódban Dr. Kis Tóth Ágnes asztrofizikus a vendégem, akivel a fekete lyukak működéséről, gravitációs hullámokról és egyéb csillagászati rejtélyekről fogunk beszélni.`,
+    published: "16 May 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast21.mp3",
+        type: "audio/mpeg"
+    },
 }
 ]

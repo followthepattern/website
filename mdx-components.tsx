@@ -3,25 +3,25 @@ import type { MDXComponents } from 'mdx/types'
 export function useMDXComponents(components: MDXComponents): MDXComponents {
     return {
         h1: ({ children }) => (
-            <h1 className="text-4xl py-6 font-normal text-center sm:font-bold sm:text-6xl sm:py-12">{children}</h1>
+            <h1 className="text-4xl pt-8 pb-4 md:pt-10 md:pb-5 lg:pt-12 lg:pb-6 font-normal text-center sm:font-bold sm:text-6xl">{children}</h1>
         ),
         h2: ({ children }) => (
-            <h1 className="text-3xl pt-6 pb-2 font-normal sm:text-5xl sm:pt-10">{children}</h1>
+            <h1 className="text-3xl pt-6 pb-3 md:pt-8 md:pb-4 lg:pt-10 lg:pb-5 font-normal sm:text-5xl">{children}</h1>
         ),
         h3: ({ children }) => (
-            <h1 className="text-2xl pt-4 pb-2 font-normal sm:text-4xl sm:pt-8">{children}</h1>
+            <h1 className="text-2xl pt-6 pb-3 md:pt-8 md:pb-4 lg:pt-10 lg:pb-5 font-normal sm:text-4xl">{children}</h1>
         ),
         h4: ({ children }) => (
-            <h1 className="text-xl py-2 xm sm:text-3xl sm:pt-4">{children}</h1>
+            <h1 className="text-xl pt-4 pb-2 md:pt-5 md:pb-2 lg:pt-6 lg:pb-3 xm sm:text-3xl">{children}</h1>
         ),
         h5: ({ children }) => (
-            <h1 className="text-lg py-2 sm:text-2xl sm:py-4">{children}</h1>
+            <h1 className="text-lg pb-6 sm:text-2xl sm:pb-12">{children}</h1>
         ),
         h6: ({ children }) => (
-            <h1 className="text-lg py-2 sm:text-xl sm:py-4">{children}</h1>
+            <h1 className="text-lg pb-5 sm:text-xl sm:pb-6">{children}</h1>
         ),
         p: ({ children }) => (
-            <p className="py text-lg sm:py-2">{children}</p>
+            <p className="pt-2 pb-4 md:pt-3 md:pb-5 lg:pt-2 lg:pb-4 text-lg">{children}</p>
         ),
         strong: ({ children }) => (
             <strong className="font-bold">{children}</strong>
@@ -37,12 +37,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
             </em>
         ),
         ul: ({ children }) => (
-            <ul className="list-inside list-disc">
+            <ul className="list-inside list-disc text-lg pt-2 pb-4 md:pt-3 md:pb-5 lg:pt-2 lg:pb-4">
                 {children}
             </ul>
         ),
         ol: ({ children }) => (
-            <ol className="list-decimal list-inside">
+            <ol className="list-decimal list-inside text-lg pt-2 pb-4 md:pt-3 md:pb-5 lg:pt-2 lg:pb-4">
                 {children}
             </ol>
         ),
@@ -60,7 +60,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
             <a
                 {...props}
                 target="_blank"
-                className="font-medium text-slate-700 underline decoration-blue-500 hover:decoration-2 underline-offset-2 active:bg-blue-50"
+                className="text-lg font-medium text-slate-700 underline decoration-blue-500 hover:decoration-2 underline-offset-2 active:bg-blue-50"
             >{children}</a>
         ),
         img: ({ ...props }) => (

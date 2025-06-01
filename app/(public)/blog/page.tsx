@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Blog() {
     return (
-        <div className="text-slate-900">
+        <div className="text-slate-950">
             <header className="mx-4 sm:mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
                 <div className="space-y-8">
                     <h1 className="font-medium pt-10 text-6xl sm:text-6xl md:text-7xl">
@@ -30,7 +30,7 @@ export default function Blog() {
                                 className="cursor-pointer"
                                 key={slug}
                             >
-                                <div className="flex rounded-xl sm:shadow-sm sm:bg-slate-50 hover:bg-slate-100 flex-col p-5">
+                                <div className="flex rounded-xl sm:shadow-sm border sm:bg-slate-50 hover:bg-slate-100 flex-col p-5 text-slate-950/90 hover:text-slate-950">
                                     <div className="text-slate-500/70 text-sm pt-2">
                                         {article.publishDate}
                                     </div>

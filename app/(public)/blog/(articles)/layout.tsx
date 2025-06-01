@@ -8,9 +8,9 @@ export default function BlogLayout({
     children: React.ReactNode
 }) {
     return (
-        <div className="bg-slate-50">
+        <div className="">
             <div
-                className="md font-light mx-auto max-w-3xl px-5 pt-5 text-slate-900"
+                className="md font-light mx-auto max-w-3xl px-5 pt-5 text-slate-950"
             >
                 {/* Include shared UI here e.g. a header or sidebar */}
                 {children}

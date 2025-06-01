@@ -5,31 +5,31 @@ export const metadata = {
 
 # Why Go Is a Great Fit for LLM Calls
 
-Integrating AI into products is one of the biggest trends in software today — and for good reason: we want to do more, and AI helps us get there faster.
+Integrating AI into products is one of the biggest trends in software today and for good reason, we want to do more, and AI helps us get there faster.
 
-There are many ways to integrate AI, but for this article, I’ll group AI agents, copilots, and workflows under a common umbrella: LLM calls. At the core, they all involve sending prompts and receiving results from an LLM service.
+There are many ways to integrate AI, but for this article, I’ll group AI agents, copilots, and workflows under a common umbrella, LLM calls. At the core, they all involve sending prompts and receiving results from an LLM service.
 
-If you break this down, it’s fundamentally about coordinating two independent processes — your application and the model backend. That’s where concurrency comes in.
+If you break this down, it’s fundamentally about coordinating two independent processes your application and the model backend. That’s where concurrency comes in.
 
 ## What Is Concurrency?
 
-Most developers are familiar with parallelism — running multiple tasks simultaneously across different CPU cores. But concurrency is a bit different: it’s about orchestrating independently executing processes, regardless of whether they actually run at the same time.
+Most developers are familiar with parallelism running multiple tasks simultaneously across different CPU cores. But concurrency is a bit different, it’s about orchestrating independently executing processes, regardless of whether they actually run at the same time.
 
 **And that’s what Go excels at.**
 
-Go provides a native, efficient, and expressive set of language features for concurrency. These aren’t frameworks or add-ons — they’re built into the language. That makes Go ideal for building AI-integrated systems that require clean, manageable concurrency.
+Go provides a native, efficient, and expressive set of language features for concurrency. These aren’t frameworks or add-ons they’re built into the language. That makes Go ideal for building AI-integrated systems that require clean, manageable concurrency.
 
 Sure, other languages like JavaScript, Python, or C# offer concurrency constructs too, but in my experience, they often come with added complexity, performance costs, and harder-to-read code.
 
 ### Where’s the Concurrency in an AI Call?
 
-Every LLM call is a coordination task — your application makes a request, and then waits for the result. That interaction is inherently concurrent.
+Every LLM call is a coordination task your application makes a request, and then waits for the result. That interaction is inherently concurrent.
 
-Let’s explore a few concurrency design patterns I’ve found especially useful in AI workflows:
+Here are few concurrency design patterns I’ve found especially useful in AI workflows.
 
 ### Timeout Pattern
 
-This is one of the most common needs: make an AI call, and either get a response or fail gracefully if it takes too long.
+This is one of the most common needs, make an AI call, and either get a response or fail gracefully if it takes too long.
 ```go
 ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
 defer cancel()
@@ -76,7 +76,7 @@ This pattern is great when you want to stream results in and process them as the
 
 ### Restore Sequencing
 
-Let’s say you’re building an AI agent that might trigger one, two, or ten LLM calls — and you won’t know how many until runtime. You want to keep the caller process running while tracking completion.
+Let’s say you’re building an AI agent that might trigger one, two, or ten LLM calls and you won’t know how many until runtime. You want to keep the caller process running while tracking completion.
 
 Go makes this surprisingly easy using channels embedded in request structs:
 
@@ -103,7 +103,7 @@ func caller() {
 }
 ```
 
-Now you can fire off multiple calls and wait for each Done channel to close — without tracking individual tasks by ID or setting up an elaborate state machine.
+Now you can fire off multiple calls and wait for each Done channel to close without tracking individual tasks by ID or setting up an elaborate state machine.
 
 ## Why Go Wins for LLM Workflows
 
@@ -112,7 +112,7 @@ Now you can fire off multiple calls and wait for each Done channel to close — 
 - Readable, testable, composable workflows
 - Perfect fit for orchestrating API-based systems like LLMs
 
-LLM calls are just API calls — but they’re unpredictable, dynamic, and can stack up fast. Go gives you the right tools to manage them cleanly and efficiently.
+LLM calls are just API calls but they’re unpredictable, dynamic, and can stack up fast. Go gives you the right tools to manage them cleanly and efficiently.
 
 If you’re building AI-native tools or agentic systems, Go deserves a place in your toolbox.
 

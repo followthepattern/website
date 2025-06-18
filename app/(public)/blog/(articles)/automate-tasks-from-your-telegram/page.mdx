@@ -1,0 +1,87 @@
+import features from "../../../../../assets/telegram-ai/features.svg"
+import aiCallsFeatures from "../../../../../assets/telegram-ai/ai-calls-features.svg"
+import chatToTelegram from "../../../../../assets/telegram-ai/chat-to-telegram.svg"
+import messagesInDb from "../../../../../assets/telegram-ai/storing-messages-in-db.svg"
+import entireScenario from "../../../../../assets/telegram-ai/entire-scenario-for-telegram-ai.svg"
+import Image from "../../components/MarkdownImage.tsx"
+
+export const metadata = {
+  title: 'AI that listens: automate tasks from your chat app - Follow The Pattern',
+  description: 'Learn how to connect a Telegram bot to your own AI system to automate tasks, protect user data, and build private, efficient workflows using Go, PostgreSQL, and Ollama.',
+}
+
+# Automating with Telegram using Our Own AI
+
+In this article, I will explain how we can automate workflows using Telegram and our own AI to speed up work, without exposing private data.
+
+## Why telegram?
+
+Telegram is a widely used messaging application that is installed on almost every smartphone. This makes it an ideal tool to connect to internal applications like a CRM or ERP system.
+
+The goal is to help colleagues work more efficiently and with fewer interruptions as they don't have to install any other applications. It would work other messaging apps. This article will only focus on telegram.
+
+## Why local AI?
+
+More precisely, a locally installed service that runs a Large Language Model (LLM) helps avoid privacy issues, because the data never leaves our servers.
+
+If you use services like OpenAI, Google, or Microsoft, you may face privacy risks since these providers can store your data. While this is not a major concern for every company, it can become important if you must comply with specific regulations.
+
+That said, the solution described here also works with cloud-based LLM providers such as OpenAI, DeepSeek, or others.
+
+## Application tech-stack
+### Go backend
+
+I prefer using Go programming language to build back-end services for easy concurrency management and simple deploy processes. Obviously, the less resources it takes, the cheaper will be the maintenance, both in human resource and in actual server cost.
+
+### Postgres DB
+
+Postgres is one of my favorite relational databases. While not the fastest, it performs well for small to medium-sized companies. It also supports many features and extensions when needed.
+
+### TypeScript React front-end
+
+TypeScript is an excellent choice for CRM and ERP frontends because its type system improves code quality. React’s component-based architecture fits well with complex business applications.
+
+### Ollama
+I use Ollama to run local LLM instances for processing AI-related tasks.
+
+## How it works
+
+Instead of showing the entire codebase, I’ll explain the core idea of using an LLM to perform tasks based on Telegram messages.
+
+I usually organize the application into features (such as users, books, tasks), and each feature contains layers (API, controller, service, database). This structure varies depending on the complexity, but it’s a good starting point.
+
+<Image src={features} alt="features"/>
+
+For the current structure, I added a new feature responsible for making LLM calls over HTTP, this will be AI service, requires authentication and authorization like all others.
+
+The main difference is that it can access other features, because it may need to call their functionalities based on incoming Telegram messages.
+
+<Image src={aiCallsFeatures} alt="AI calls features"/>
+
+Telegram itself is also a feature, but it doesn’t expose an endpoint. Instead, it runs as a background service. It listens for messages sent to the Telegram bot and passes them to the application service for handling.
+
+<Image src={chatToTelegram} alt="Chat to telegram"/>
+
+Since Telegram does not provide chat history, we need to manage that ourselves. Without storing conversation history, the LLM would lose context and fail to respond accurately.
+
+You can store the chat history in memory, a distributed cache, or a database. If speed is important, caching may be better. If long conversations are expected over time, a relational database might be the best option.
+
+To start, I recommend using the same PostgreSQL database that stores user information.
+
+<Image src={messagesInDb} alt="Storing messages in db"/>
+
+When a user sends a message to the bot, the service receives it and decides whether it needs to call a tool or just reply directly. With well-designed prompting, the entire application can be managed through Telegram while maintaining proper authorization at all times.
+
+<Image src={entireScenario} alt="Entire telegram scenario"/>
+
+This is how you can design an application that interacts through a Telegram bot and still follows access control rules.
+
+## Final Thoughts
+
+In the next article, I will write about how to create and test prompts for large language models. Writing good prompts is an important skill when building applications with AI, and I will explain how to make them more reliable and easier to test.
+
+I will also continue publishing new articles about artificial intelligence, how to connect AI with software projects, and how to build useful tools with these technologies. My goal is to share practical ideas and lessons that other developers can use.
+
+Soon, I will also start a YouTube channel where I will talk about these topics in more detail. I plan to include examples, tutorials, and short videos to help others learn how to use AI in everyday software development.
+
+If you are interested in learning more about building applications with AI, feel free to follow along.

@@ -11,7 +11,6 @@ import MainTitle from "./components/mainTitle";
 import MotionForm from "./components/motionForm";
 import Link from "next/link";
 import classNames from "classnames";
-import { FreeCallLink } from "@/lib/constants";
 
 interface SecondaryButtonProperties {
   children?: any
@@ -85,7 +84,7 @@ export default function Home() {
               We help you go from prototype to deployable AI-powered app.
             </Card.Body>
             <Card.Footer>
-              <Card.Link href={FreeCallLink} target="_blank">
+              <Card.Link href="/book">
                 Book a Free Call
               </Card.Link>
             </Card.Footer>
@@ -127,7 +126,7 @@ export default function Home() {
             Have questions or want to discuss your ideas? Book a free 30-minute call with us and Let{"'"} chat!
           </Section.Subtitle>
           <div className="flex justify-center">
-            <Link href={FreeCallLink} target="_blank" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
+            <Link href="/book" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
               Book a Free Call
             </Link>
           </div>

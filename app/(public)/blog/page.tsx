@@ -22,15 +22,15 @@ export default function Blog() {
                 <Section.Title>
                     Articles
                 </Section.Title>
-                <div className="mx-auto sm:max-w-md md:max-w-5xl divide-y sm:divide-y-0 grid grid-cols-1 sm:gap-y-8 md:gap-x-8 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
-                    {Object.entries(articles).map(([slug, article]) => {
+                <div className="mx-auto sm:max-w-md md:max-w-5xl divide-y border-y sm:border-y-0 sm:divide-y-0 grid grid-cols-1 sm:gap-y-8 md:gap-x-8 md:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+                    {Object.entries(articles).reverse().map(([slug, article]) => {
                         return (
                             <Link
                                 href={`/blog/${slug}`}
                                 className="cursor-pointer"
                                 key={slug}
                             >
-                                <div className="flex rounded-xl sm:shadow-sm border sm:bg-slate-50 hover:bg-slate-100 flex-col p-5 text-slate-950/90 hover:text-slate-950">
+                                <div className="flex sm:rounded-xl sm:shadow-sm sm:border sm:bg-slate-50 hover:bg-slate-100 flex-col p-5 text-slate-950/90 hover:text-slate-950">
                                     <div className="text-slate-500/70 text-sm pt-2">
                                         {article.publishDate}
                                     </div>

@@ -18,7 +18,10 @@ const config: Config = {
         18: '4.5rem',
         112: '28rem',
         120: '30rem',
-      }
+      },
+      screens: {  
+        'calendly': '1100px',
+      },
     },
   },
   plugins: [],

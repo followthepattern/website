@@ -65,7 +65,10 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
             <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center gap-x-6">
                     <HomeActionIcon />
-                    <CTAButton className="ml-auto" />
+                    <CTAButton
+                        className="ml-auto"
+                        onClick={() => props.setMobileMenuOpen(false)}
+                    />
                     <button
                         type="button"
                         className="-m-2.5 rounded-md p-2.5 text-gray-900"
@@ -80,7 +83,7 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
                         {props.navigation.map((item) => {
                             if (item.children) {
                                 return (
-                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} setMobileMenuOpen={props.setMobileMenuOpen}/>
+                                    <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} setMobileMenuOpen={props.setMobileMenuOpen} />
                                 )
                             }
 

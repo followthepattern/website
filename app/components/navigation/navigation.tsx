@@ -13,10 +13,10 @@ export interface NavigationItem {
     href: string
     description?: string
     target?: string
-    children?: NavigationItem[] 
+    children?: NavigationItem[]
 }
 
-const navigation : NavigationItem[] = [
+const navigation: NavigationItem[] = [
     {
         name: 'Courses', href: '#', children: [
             {

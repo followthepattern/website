@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import PatternBackground from "../components/patternBackground";
-import CTAButton from "../components/navigation/ctaButton";
 import Section from "../components/section";
 import Card from "./components/card";
 import Socials from "./components/socials";
@@ -49,22 +48,14 @@ export default function Home() {
             <div className="mx-12 space-y-10 justify-center flex flex-col">
               <MainTitle count={count} className="mx-auto max-w-lg sm:max-w-3xl pt-10 sm:pl-0 md:text-center lg:text-left text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl" />
               <p className="mx-auto max-w-xl my-2 lg:mx-2 xl:mx-auto text-gray-900 text-lg font-light">
-                We build AI-powered applications that
+                We build <span className="font-medium">AI-powered</span> applications that
                 enable companies to do more through software — enhancing functionality, improving efficiency,
                 and supporting long-term growth.
               </p>
-              <div className="flex justify-center space-x-3">
-                <CTAButton className="">
-                  Get Started
-                </CTAButton>
-                <SecondurayButton>
-                  Learn More
-                </SecondurayButton>
+            </div>
+              <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
+                <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />
               </div>
-            </div>
-            <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
-              <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />
-            </div>
           </div>
         </PatternBackground>
       </header>

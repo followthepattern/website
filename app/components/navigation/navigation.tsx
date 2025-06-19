@@ -14,11 +14,27 @@ export interface NavigationItem {
     description?: string
     target?: string
     children?: NavigationItem[]
+    label?: boolean
 }
 
 const navigation: NavigationItem[] = [
     {
-        name: 'Courses', href: '#', children: [
+        name: 'Services', href: '#', children: [
+            {
+                name: "Building Applications",
+                href: "",
+                label: true,
+            },
+            {
+                name: "AI Applications",
+                href: "/learn/en/gobasic",
+                description: 'We build AI Native applications that enables you to do lot more!'
+            },
+            {
+                name: "Courses",
+                href: "",
+                label: true,
+            },
             {
                 name: "Go Basic",
                 href: "/learn/en/gobasic",

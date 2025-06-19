@@ -35,20 +35,34 @@ function DrawerDisclosure(props: DrawerDisclosureProperties) {
                         />
                     </Disclosure.Button>
                     <Disclosure.Panel className="mt-2 space-y-2">
-                        {props.navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                target={item.target}
-                                className={classNames("block rounded-lg py-2 pl-6 pr-8 font-semibold hover:bg-gray-50", {
-                                    "text-gray-900": props.pathName != item.href,
-                                    "text-blue-600": props.pathName == item.href,
-                                })}
-                                onClick={() => props.setMobileMenuOpen(false)}
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
+                        {props.navigation.map((item) => {
+                            if (item.label) {
+                                return (
+                                    <div
+                                        className="pt-6 italic pl-4 text-sm text-neutral-800/60"
+                                        key={item.name}
+                                    >
+                                        {item.name}
+                                    </div>
+                                )
+                            }
+
+                            return (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    target={item.target}
+                                    className={classNames("block rounded-lg py-2 pl-6 pr-8 font-semibold hover:bg-gray-50", {
+                                        "text-gray-900": props.pathName != item.href,
+                                        "text-blue-600": props.pathName == item.href,
+                                    })}
+                                    onClick={() => props.setMobileMenuOpen(false)}
+                                >
+                                    {item.name}
+                                </Link>
+                            )
+                        }
+                        )}
                     </Disclosure.Panel>
                 </>
             )}
@@ -81,6 +95,14 @@ export default function MobileDrawerMenu(props: MobileDrawerMenuProperties) {
                 <div className="mt-6 flow-root">
                     <div className="space-y-2 py-6">
                         {props.navigation.map((item) => {
+                            if (item.label) {
+                                return (
+                                    <label key={item.name}>
+                                        {item.name}
+                                    </label>
+                                )
+                            }
+
                             if (item.children) {
                                 return (
                                     <DrawerDisclosure key={item.name} name={item.name} navigation={item.children} pathName={pathName} setMobileMenuOpen={props.setMobileMenuOpen} />

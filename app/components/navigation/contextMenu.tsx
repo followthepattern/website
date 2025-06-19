@@ -29,15 +29,29 @@ export default function ContextMenu(props: ContextMenuProperties) {
                 leaveTo="opacity-0 translate-y-1"
             >
                 <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
-                    {props.items.map((item) => (
-                        <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
-                            <Link href={item.href} className="block text-sm font-semibold leading-6 text-gray-900" target={item.target}>
-                                {item.name}
-                                <span className="absolute inset-0" />
-                            </Link>
-                            <p className="mt-1 text-sm leading-6 text-gray-700">{item.description}</p>
-                        </div>
-                    ))}
+                    {props.items.map((item) => {
+                        if (item.label) {
+                            return (
+                                <label
+                                    key={item.name}
+                                    className="p-4 text-xs font-medium text-neutral-800/60"
+                                >
+                                    {item.name}
+                                </label>
+                            )
+                        }
+
+                        return (
+                            <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
+                                <Link href={item.href} className="block text-sm font-semibold leading-6 text-gray-900" target={item.target}>
+                                    {item.name}
+                                    <span className="absolute inset-0" />
+                                </Link>
+                                <p className="mt-1 text-sm leading-6 text-gray-700">{item.description}</p>
+                            </div>
+                        )
+                    }
+                    )}
                 </Popover.Panel>
             </Transition>
         </Popover>

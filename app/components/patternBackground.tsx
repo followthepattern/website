@@ -90,7 +90,7 @@ interface RectangleBackgroundProperties {
 export function RectangleBackground(props: RectangleBackgroundProperties) {
     return (
         <div className="inline-block relative h-full w-full">
-            <Rectangles patternHeight={150} patternWidth={150} className="-top-44 -left-4 stroke-gray-300 [mask-image:radial-gradient(100%_80%_at_center,white,transparent)]"/>
+            <Rectangles patternHeight={150} patternWidth={150} className="-top-44 -left-4 stroke-gray-300 [mask-image:radial-gradient(60%_60%_at_center,white,transparent)]"/>
             <div className={classNames(props.className, "")}>
                 {props.children}
             </div>

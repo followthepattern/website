@@ -27,7 +27,7 @@ const navigation: NavigationItem[] = [
             },
             {
                 name: "AI Applications",
-                href: "/learn/en/gobasic",
+                href: "/building-ai-app",
                 description: 'We build AI Native applications that enables you to do lot more!'
             },
             {

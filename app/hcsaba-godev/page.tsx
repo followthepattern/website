@@ -242,7 +242,7 @@ const CV = () => {
                     </Link>
                     <Link className="flex space-x-4" href={PodcastYoutubeLink} target="_blank" rel="noreferrer">
                         <Youtube className="w-10 h-10 fill-[#f00]" />
-                        <div className="my-auto font-medium">The FP Podcast</div>
+                        <div className="my-auto font-medium">@CsabaDev</div>
                     </Link>
                 </div>
             </header>

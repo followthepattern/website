@@ -2,7 +2,7 @@ import Discord from "@/icons/Discord";
 import Github from "@/icons/Github";
 import LinkedIn from "@/icons/LinkedIn";
 import Youtube from "@/icons/Youtube";
-import { PodcastYoutubeLink } from "@/lib/constants";
+import { CsabaDevYoutubeLink, PodcastYoutubeLink } from "@/lib/constants";
 import classNames from "classnames";
 
 interface SocialsProperties {
@@ -19,7 +19,7 @@ export default function Socials(props: SocialsProperties) {
                 <LinkedIn className="w-8 h-8 text-gray-500 hover:text-[#0a66c2] transition ease-in-out hover:scale-125 delay-50 duration-150" />
             </a>
             <a
-                href={PodcastYoutubeLink}
+                href={CsabaDevYoutubeLink}
                 className="flex items-center group"
                 target="_blank"
                 rel="noreferrer"

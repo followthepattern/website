@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import Discord from "@/icons/Discord";
-import { DiscordLink, PodcastYoutubeLink } from "@/lib/constants";
+import { CsabaDevYoutubeLink, DiscordLink, PodcastYoutubeLink } from "@/lib/constants";
 import Youtube from "@/icons/Youtube";
 import Profile from "../(public)/components/profile";
 import Link from "next/link";
@@ -240,7 +240,7 @@ const CV = () => {
                         <FPIcon className="w-10 h-10 fill-blue-500" />
                         <div className="my-auto font-medium">Follow The Pattern</div>
                     </Link>
-                    <Link className="flex space-x-4" href={PodcastYoutubeLink} target="_blank" rel="noreferrer">
+                    <Link className="flex space-x-4" href={CsabaDevYoutubeLink} target="_blank" rel="noreferrer">
                         <Youtube className="w-10 h-10 fill-[#f00]" />
                         <div className="my-auto font-medium">@CsabaDev</div>
                     </Link>

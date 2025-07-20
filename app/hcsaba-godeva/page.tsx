@@ -50,22 +50,22 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Enhanced the efficiency of the Kafka connection by implementing in GoLang an updated version of the Kafka API client</li>
-                        <li>Introduced a new language feature to our internal query language written in GoLang, significantly enhancing the speed of query execution</li>
-                        <li>Developed new CLI tools in GoLang to streamline workflows and simplify tasks for developers and users</li>
+                        <li>Assisted companies of various sizes in designing and implementing products and workflows to enhance their outcomes</li>
+                        <li>Taught senior developers Go through my course, helping them advance their careers with practical, production-level skills</li>
+                        <li>Reached over 600,000 views on YouTube through coding tutorials and podcast episodes focused on software engineering, business and AI</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Participating in the implementation of new features for GoLang back-end web services, adhering to concurrency design principles</li>
-                        <li>Adding automated test cases to consistently improve product quality</li>
-                        <li>Writing documentation for newly implemented components</li>
-                        <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews</li>
+                        <li>Collaborate with companies to design and implement features and workflows that enhance business outcomes</li>
+                        <li>Design and develop AI-native applications that empower organizations to significantly increase productivity</li>
+                        <li>Create and manage online coding courses, primarily focused on Go programming</li>
+                        <li>Educate and share technical knowledge through a podcast and YouTube channel, reaching a combined audience of over 600,000 views</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>GoLang</div>
+                <div className={technologies}>GoLang, TypeScript, React, Ollama, LLM, OpenAI</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>BlackRock</div>
@@ -236,12 +236,12 @@ const CV = () => {
                     <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
                 </div>
                 <div className="mx-auto font-light text-lg max-w-2xl">
-                    <p>I’m the founder of FollowThePattern and a software engineer focused on building applications that
-                        leverage modern technologies—including AI—to streamline processes and enable faster execution.
+                    <p>I’m the founder of FollowThePattern and a software engineer focused on building AI native applications that
+                        enables companies to do lot more.
                     </p>
                     <p className="mt-2">
                         With over a decade of software development experience across domains like test automation, scalable microservices,
-                        and event-driven systems, I focus on delivering solutions for companies that want to move fast.
+                        and event-driven systems, I focus on consulting with companies that want to move fast.
                     </p>
                 </div>
                 <div className="mx-auto font-light max-w-2xl cursor-default">

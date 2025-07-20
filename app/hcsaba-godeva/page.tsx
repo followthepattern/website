@@ -50,18 +50,18 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Participating in the implementation of new features for Golang back-end web services, adhering to concurrency design principles.</li>
-                        <li>Adding automated test cases to consistently improve product quality.</li>
-                        <li>Writing documentation for newly implemented components.</li>
-                        <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews.</li>
+                        <li>Participating in the implementation of new features for Golang back-end web services, adhering to concurrency design principles</li>
+                        <li>Adding automated test cases to consistently improve product quality</li>
+                        <li>Writing documentation for newly implemented components</li>
+                        <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Enhanced the efficiency of the Kafka connection by implementing in Golang an updated version of the Kafka API client.</li>
-                        <li>Introduced a new language feature to our internal query language written in Golang, significantly enhancing the speed of query execution.</li>
-                        <li>Developed new CLI tools in Golang to streamline workflows and simplify tasks for developers and users.</li>
+                        <li>Enhanced the efficiency of the Kafka connection by implementing in Golang an updated version of the Kafka API client</li>
+                        <li>Introduced a new language feature to our internal query language written in Golang, significantly enhancing the speed of query execution</li>
+                        <li>Developed new CLI tools in Golang to streamline workflows and simplify tasks for developers and users</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
@@ -75,19 +75,19 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Participating in the design and implementation of back-end web services from scratch using Golang.</li>
-                        <li>Implementing new features in the front-end using JavaScript and React.</li>
-                        <li>Testing the application and crafting automated test cases.</li>
-                        <li>Engaging in code reviews to maintain code quality and collaborative learning.</li>
-                        <li>Writing comprehensive documentation for various components and features.</li>
+                        <li>Participating in the design and implementation of back-end web services from scratch using Golang</li>
+                        <li>Implementing new features in the front-end using JavaScript and React</li>
+                        <li>Testing the application and crafting automated test cases</li>
+                        <li>Engaging in code reviews to maintain code quality and collaborative learning</li>
+                        <li>Writing comprehensive documentation for various components and features</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Successfully implemented an MVP (Minimum Viable Product).</li>
-                        <li>Contributed to the construction of DevOps pipelines, enhancing deployment and integration processes.</li>
-                        <li>Assisted in establishing efficient team workflows, promoting collaboration and productivity.</li>
+                        <li>Successfully implemented an MVP (Minimum Viable Product)</li>
+                        <li>Contributed to the construction of DevOps pipelines, enhancing deployment and integration processes</li>
+                        <li>Assisted in establishing efficient team workflows, promoting collaboration and productivity</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
@@ -98,24 +98,23 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>Jul 2020 – May 2021</div>
                 <div className={titleColumn}>Golang back-end developer</div>
                 <div className={dateColumnMobile}>Jul 2020 – May 2021</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Constructing back-end applications from scratch for our customers predominantly using the Golang programming language.</li>
-                        <li>Implementing and maintaining features in our Truendo product, which follows a microservices architecture, typically with the Golang programming language.</li>
-                        <li>Writing and upkeeping TypeScript scripts that form an integral part of the Truendo product.</li>
-                        <li>Testing recent modifications in the product to ensure optimal performance.</li>
-                        <li>Deploying updates across all environments to guarantee smooth transitions and functionality.</li>
-                        <li>Actively participating in code reviews to maintain the highest standards of code quality.</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Successfully built a back-end application from scratch using Golang, fully meeting customer requirements.</li>
-                        <li>Developed critical TypeScript scripts for Truendo, significantly enhancing its functionality and user experience.</li>
-                        <li>Maintained a high success rate in testing and validating new product changes, ensuring top-notch reliability with minimal disruptions.</li>
-                        <li>Played a pivotal role in improving code quality through active participation in code reviews and collaborative feedback sessions.</li>
+                        <li>Successfully built a back-end application from scratch using Golang, fully meeting customer requirements</li>
+                        <li>Developed webiste scanner script in TypeScript for Truendo, significantly enhancing and automating the product features</li>
+                        <li>Played a pivotal role in improving code quality through active participation in code reviews and collaborative feedback sessions</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Constructing back-end applications from scratch for our customers predominantly using the Golang programming language</li>
+                        <li>Implementing and maintaining features in our Truendo product, which follows a microservices architecture, typically with the Golang programming language</li>
+                        <li>Writing and upkeeping TypeScript scripts that form an integral part of the Truendo product</li>
+                        <li>Testing recent modifications in the product to ensure optimal performance</li>
+                        <li>Deploying updates across all environments to guarantee smooth transitions and functionality</li>
+                        <li>Actively participating in code reviews to maintain the highest standards of code quality</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>

@@ -181,24 +181,24 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>Jan 2016 – Sep 2018</div>
                 <div className={titleColumn}>.NET C# developer</div>
                 <div className={dateColumnMobile}>Jan 2016 – Sep 2018</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Developed a desktop application product that enabled users to create vector diagrams from scanned point clouds.</li>
-                        <li>Collected user requirements directly from customers to ensure product relevance and functionality.</li>
-                        <li>Maintained regular communication with daily product users, ensuring timely feedback and continuous improvement.</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Streamlined the product development process by effectively gathering and implementing customer feedback, leading to a marked increase in user satisfaction.</li>
-                        <li>Proactively addressed user requirements and incorporated their feedback, resulting in a reduction of customer support tickets.</li>
-                        <li>Enhanced product functionality based on user insights, significantly improving the overall customer experience.</li>
+                        <li>
+                            I tailored key features for premium clients,
+                            ensuring our product met their high expectations and delivered a smoother,
+                            more efficient experience.
+                        </li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Actively collaborated with users to shape a desktop application—from gathering requirements to continuous feedback—ensuring the product evolved to meet real-world needs.</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Windows 7, Windows 10, .NET, C#, Visual Studio 2015</div>
+                <div className={technologies}>Windows, Visual Studio, .NET, C#, PowerShell</div>
             </div>
         </section>
     )

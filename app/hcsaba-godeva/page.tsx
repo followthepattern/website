@@ -126,23 +126,28 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>Sep 2019 – Jun 2020</div>
                 <div className={titleColumn}>.NET C# developer</div>
                 <div className={dateColumnMobile}>Sep 2019 – Jun 2020</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Developed Tricentis Tosca{"'"}s automation platform, where I actively participated in defining stories, fixing bugs, and implementing features during two-week sprints.</li>
-                        <li>Tested new implementations and bug fixes. During tight schedules, I also stepped in to test changes made by teammates, complementing the code review process.</li>
-                        <li>Assisted product support by addressing unique customer issues. When required, I collaborated in detailed investigations and provided custom implementations to resolve specific challenges.</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Played a pivotal role in the successful delivery of numerous features and updates for Tricentis Tosca{"'"}s automation platform, consistently achieving sprint objectives.</li>
-                        <li>Maintained a strong success rate in preliminary tests of new implementations, minimizing post-deployment challenges and enhancing product reliability.</li>
+                        <li>
+                            Played a pivotal role in the successful delivery of numerous features and
+                            updates for Tricentis Tosca{"'"}s automation platform,
+                            consistently achieving sprint objectives.
+                        </li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>
+                            Contributed to Tricentis Tosca’s automation platform by defining stories,
+                            delivering and testing features, supporting users, and
+                            resolving complex issues under tight deadlines.
+                        </li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Windows 7, Windows 10, .NET, C#, Visual Studio 2019, Java 8, Java 11</div>
+                <div className={technologies}>Windows, .NET, C#, Visual Studio, Java 8, Java 11, CI/CD pipelines</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>QUALYSOFT</div>

@@ -97,22 +97,20 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>Jun 2021 – Apr 2022</div>
                 <div className={titleColumn}>Senior GoLang back-end developer</div>
                 <div className={dateColumnMobile}>Jun 2021 – Apr 2022</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Participating in the design and implementation of back-end web services from scratch using GoLang</li>
-                        <li>Implementing new features in the front-end using JavaScript and React</li>
-                        <li>Testing the application and crafting automated test cases</li>
-                        <li>Engaging in code reviews to maintain code quality and collaborative learning</li>
-                        <li>Writing comprehensive documentation for various components and features</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Successfully implemented an MVP (Minimum Viable Product)</li>
-                        <li>Contributed to the construction of DevOps pipelines, enhancing deployment and integration processes</li>
-                        <li>Assisted in establishing efficient team workflows, promoting collaboration and productivity</li>
+                        <li>Delivered a fully functional MVP, aligning the application design closely with business requirements</li>
+                        <li>Contributed to DevOps pipeline setup, streamlining deployment and integration to reduce iteration time and operational costs</li>
+                        <li>Established efficient team workflows to accelerate delivery and improve overall development efficiency</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Designed and implemented backend web services from scratch using Go, and developed new frontend features with JavaScript and React</li>
+                        <li>Tested applications and created automated test cases to ensure stability and performance</li>
+                        <li>Contributed to code reviews and documentation to uphold quality standards and support team knowledge sharing</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>

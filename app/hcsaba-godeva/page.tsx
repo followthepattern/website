@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import Discord from "@/icons/Discord";
-import { CsabaDevYoutubeLink, DiscordLink, PodcastYoutubeLink } from "@/lib/constants";
+import { CsabaDevYoutubeLink } from "@/lib/constants";
 import Youtube from "@/icons/Youtube";
 import Profile from "../(public)/components/profile";
 import Link from "next/link";
@@ -17,16 +16,9 @@ const EducationSection = () => {
             <h1 className={sectionHeader}>Education</h1>
             <div className="grid grid-cols-12 gap-4">
                 <div className={firstColumn}>2013 - 2019</div>
-                <div className={secondColumn}>BUDAPEST UNIVERSITY OF TECHNOLOGY AND ECONOMICS
-                    Faculty of Civil Engineering (Geoinformatics), Budapest</div>
-            </div>
-            <div className="grid grid-cols-12 gap-4">
-                <div className={firstColumn}>2009 - 2013</div>
-                <div className={secondColumn}>ÁFEOSZ Secondary School of Economics, Kecskemét</div>
-            </div>
-            <div className="grid grid-cols-12 gap-4">
-                <div className={firstColumn}>2001 - 2009</div>
-                <div className={secondColumn}>Primary school, Kecskemét</div>
+                <div className={secondColumn}>
+                    BSc in Geoinformatics, Faculty of Civil Engineering, Budapest University of Technology and Economics (BME), Budapest
+                </div>
             </div>
         </section>
     )
@@ -157,24 +149,26 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>Sep 2018 – Apr 2019</div>
                 <div className={titleColumn}>DevOps engineer at Qualysoft outsourced to Ericsson</div>
                 <div className={dateColumnMobile}>Sep 2018 – Apr 2019</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Enhanced and maintained the Continuous Integration (CI) system for an Ericsson product.</li>
-                        <li>Significantly contributed to elevating code quality through active involvement in code reviews and collaborative feedback sessions.</li>
-                        <li>Collaborated cross-functionally to streamline deployment processes, ensuring consistent and efficient releases across environments.</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Successfully optimized the CI system for the Ericsson product.</li>
-                        <li>Played a key role in reducing code defects through code reviews and feedback sessions, leading to more stable releases.</li>
-                        <li>Improved deployment efficiency by collaborating with multiple teams and introducing automated deployment scripts, ensuring quicker and more reliable product updates.</li>
+                        <li>
+                            Improved release stability and deployment speed by optimizing CI and
+                            driving cross-team collaboration and code quality efforts.
+                        </li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>
+                            Maintained and improved the CI system, promoted code quality through reviews, and
+                            streamlined deployments via cross-team collaboration.
+                        </li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Linux, Python, Perl, Bash, Groovy, Java, JavaScript, HTML</div>
+                <div className={technologies}>Jenkins, Linux, Python, Perl, Bash, Groovy, Java, JavaScript, HTML</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>DIGICART</div>
@@ -194,7 +188,10 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Actively collaborated with users to shape a desktop application—from gathering requirements to continuous feedback—ensuring the product evolved to meet real-world needs.</li>
+                        <li>
+                            Actively collaborated with users to shape a desktop application—from gathering requirements to continuous feedback—ensuring
+                            the product evolved to meet real-world needs.
+                        </li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>

@@ -43,14 +43,39 @@ const ExperienceSection = () => {
         <section>
             <h1 className={sectionHeader}>Experience</h1>
             <div className={experienceTable}>
+                <div className={companyName}>Follow The Pattern</div>
+                <div className={dateColumn}>May 2022 – Present</div>
+                <div className={titleColumn}>Founder</div>
+                <div className={dateColumnMobile}>May 2022 – Present</div>
+                <div className={subSectionTitle}>Achievements</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Enhanced the efficiency of the Kafka connection by implementing in GoLang an updated version of the Kafka API client</li>
+                        <li>Introduced a new language feature to our internal query language written in GoLang, significantly enhancing the speed of query execution</li>
+                        <li>Developed new CLI tools in GoLang to streamline workflows and simplify tasks for developers and users</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Participating in the implementation of new features for GoLang back-end web services, adhering to concurrency design principles</li>
+                        <li>Adding automated test cases to consistently improve product quality</li>
+                        <li>Writing documentation for newly implemented components</li>
+                        <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Technologies</div>
+                <div className={technologies}>GoLang</div>
+            </div>
+            <div className={experienceTable}>
                 <div className={companyName}>BlackRock</div>
                 <div className={dateColumn}>May 2022 – Present</div>
-                <div className={titleColumn}>Golang developer</div>
+                <div className={titleColumn}>Senior GoLang developer</div>
                 <div className={dateColumnMobile}>May 2022 – Present</div>
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Participating in the implementation of new features for Golang back-end web services, adhering to concurrency design principles</li>
+                        <li>Participating in the implementation of new features for GoLang back-end web services, adhering to concurrency design principles</li>
                         <li>Adding automated test cases to consistently improve product quality</li>
                         <li>Writing documentation for newly implemented components</li>
                         <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews</li>
@@ -59,23 +84,23 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Enhanced the efficiency of the Kafka connection by implementing in Golang an updated version of the Kafka API client</li>
-                        <li>Introduced a new language feature to our internal query language written in Golang, significantly enhancing the speed of query execution</li>
-                        <li>Developed new CLI tools in Golang to streamline workflows and simplify tasks for developers and users</li>
+                        <li>Enhanced the efficiency of the Kafka connection by implementing in GoLang an updated version of the Kafka API client</li>
+                        <li>Introduced a new language feature to our internal query language written in GoLang, significantly enhancing the speed of query execution</li>
+                        <li>Developed new CLI tools in GoLang to streamline workflows and simplify tasks for developers and users</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Golang, Gitlab, K8s, Microservices, Kafka</div>
+                <div className={technologies}>GoLang, Gitlab, Azure, K8s, ArgoCD, Microservices, Kafka, Testcontainers, Dagger, </div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>SPORTRADAR</div>
                 <div className={dateColumn}>Jun 2021 – Apr 2022</div>
-                <div className={titleColumn}>Senior Golang back-end developer</div>
+                <div className={titleColumn}>Senior GoLang back-end developer</div>
                 <div className={dateColumnMobile}>Jun 2021 – Apr 2022</div>
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Participating in the design and implementation of back-end web services from scratch using Golang</li>
+                        <li>Participating in the design and implementation of back-end web services from scratch using GoLang</li>
                         <li>Implementing new features in the front-end using JavaScript and React</li>
                         <li>Testing the application and crafting automated test cases</li>
                         <li>Engaging in code reviews to maintain code quality and collaborative learning</li>
@@ -91,34 +116,30 @@ const ExperienceSection = () => {
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Linux, Golang, React, GraphQL, JavaScript, HTML, Gitlab, Microservice, MySQL, Docker, AWS</div>
+                <div className={technologies}>Linux, GoLang, React, GraphQL, JavaScript, HTML, Gitlab, Microservice, MySQL, Docker, AWS</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>DECIDIO</div>
                 <div className={dateColumn}>Jul 2020 – May 2021</div>
-                <div className={titleColumn}>Golang back-end developer</div>
+                <div className={titleColumn}>GoLang back-end developer</div>
                 <div className={dateColumnMobile}>Jul 2020 – May 2021</div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Successfully built a back-end application from scratch using Golang, fully meeting customer requirements</li>
-                        <li>Developed webiste scanner script in TypeScript for Truendo, significantly enhancing and automating the product features</li>
-                        <li>Played a pivotal role in improving code quality through active participation in code reviews and collaborative feedback sessions</li>
+                        <li>Built a backend application from scratch in Go, fully meeting customer requirements and ensuring reliable performance</li>
+                        <li>Developed a TypeScript-based website scanner for Truendo, significantly enhancing feature automation and product capability</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Responsibilities</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Constructing back-end applications from scratch for our customers predominantly using the Golang programming language</li>
-                        <li>Implementing and maintaining features in our Truendo product, which follows a microservices architecture, typically with the Golang programming language</li>
-                        <li>Writing and upkeeping TypeScript scripts that form an integral part of the Truendo product</li>
-                        <li>Testing recent modifications in the product to ensure optimal performance</li>
-                        <li>Deploying updates across all environments to guarantee smooth transitions and functionality</li>
-                        <li>Actively participating in code reviews to maintain the highest standards of code quality</li>
+                        <li>Designed and developed backend applications from scratch in Go, contributing to microservices within the Truendo product and meeting customer-specific requirements</li>
+                        <li>Implemented, maintained, and tested product features, including TypeScript scripts and Go-based services, ensuring performance and reliability across deployments</li>
+                        <li>Actively participated in code reviews and feedback sessions to uphold code quality and support continuous improvement across the team</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>Linux, Golang, Typescript, JavaScript, HTML, Jenkins, K8s, Microservice, PostgreSQL, Docker, AWS</div>
+                <div className={technologies}>Linux, GoLang, Typescript, JavaScript, HTML, Jenkins, K8s, Microservice, PostgreSQL, Docker, AWS</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>TRICENTIS</div>

@@ -72,25 +72,24 @@ const ExperienceSection = () => {
                 <div className={dateColumn}>May 2022 – Present</div>
                 <div className={titleColumn}>Senior GoLang developer</div>
                 <div className={dateColumnMobile}>May 2022 – Present</div>
-                <div className={subSectionTitle}>Responsibilities</div>
-                <div className={secondColumn}>
-                    <ul className={listStyle}>
-                        <li>Participating in the implementation of new features for GoLang back-end web services, adhering to concurrency design principles</li>
-                        <li>Adding automated test cases to consistently improve product quality</li>
-                        <li>Writing documentation for newly implemented components</li>
-                        <li>Collaborating closely with team members through knowledge sharing, pair programming, and code reviews</li>
-                    </ul>
-                </div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Enhanced the efficiency of the Kafka connection by implementing in GoLang an updated version of the Kafka API client</li>
-                        <li>Introduced a new language feature to our internal query language written in GoLang, significantly enhancing the speed of query execution</li>
-                        <li>Developed new CLI tools in GoLang to streamline workflows and simplify tasks for developers and users</li>
+                        <li>Led the design and implementation of end-to-end test automation, enabling the team to achieve 20× faster testing cycles.</li>
+                        <li>Optimized cross-service communication by enhancing Go-based Kafka messaging for greater efficiency.</li>
+                        <li>Extended the product’s query language with new features, significantly accelerating output calculations through deep business and technical insight.</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Implement new features for Go web services, applying clean architecture and concurrency design principles</li>
+                        <li>Design and maintain end-to-end automated test cases to ensure consistent product quality and enable faster delivery</li>
+                        <li>Lead by example in design meetings, pair programming sessions, and documentation efforts to guide and mentor team members</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
-                <div className={technologies}>GoLang, Gitlab, Azure, K8s, ArgoCD, Microservices, Kafka, Testcontainers, Dagger, </div>
+                <div className={technologies}>GoLang, Gitlab, Azure, K8s, ArgoCD, Microservices, Kafka, Testcontainers</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>SPORTRADAR</div>

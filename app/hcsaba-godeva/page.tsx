@@ -3,6 +3,7 @@ import { CsabaDevYoutubeLink, PodcastYoutubeLink } from "@/lib/constants";
 import Youtube from "@/icons/Youtube";
 import Profile from "../(public)/components/profile";
 import Link from "next/link";
+import Github from "@/icons/Github";
 
 const sectionHeader = "mt-10 mb-8 text-2xl font-bold text-gray-900 sm:text-4xl"
 
@@ -78,6 +79,15 @@ const KnowledgeSharingSection = () => {
                     </Link>
                     <div className="font-light">
                         A show exploring IT, business, and science topics, with over 600K+ views across platforms
+                    </div>
+                </div>
+                <div className="">
+                    <Link className="flex space-x-4" href={"https://github.com/huszkacs"} target="_blank" rel="noreferrer">
+                        <Github className="w-10 h-10 fill-black" />
+                        <div className="my-auto font-medium">@HuszkaCs</div>
+                    </Link>
+                    <div className="font-light">
+                        Actively contribute to open-source by publishing code on GitHub and sharing practical solutions
                     </div>
                 </div>
             </div>

@@ -19,13 +19,14 @@ const CV = () => {
                 <div className="flex justify-center">
                     <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
                 </div>
-                <div className="mx-auto font-light text-lg max-w-2xl">
-                    <p>I’m the founder of FollowThePattern and a software engineer focused on building AI native applications that
-                        enables companies to do lot more.
+                <div className="mx-auto font-light text-lg max-w-2xl space-y-2">
+                    <p>
+                        I work with startups and scale-ups, collaborating with CTOs and
+                        mentoring development teams to build products that align with both business and technical requirements.
                     </p>
-                    <p className="mt-2">
-                        With over a decade of software development experience across domains like test automation, scalable microservices,
-                        and event-driven systems, I focus on consulting with companies that want to move fast.
+                    <p>
+                        Founder of FollowThePattern and a software engineer focused on building AI native applications that
+                        enables companies to do lot more.
                     </p>
                 </div>
                 <div className="mx-auto font-light max-w-2xl cursor-default">
@@ -46,7 +47,8 @@ const CV = () => {
             <section>
                 <h1 className={sectionHeader}>Languages</h1>
                 <div>English - Professional working proficiency</div>
-                <div>Hungarian - Native</div>
+                <div>Spanish - Basic proficiency</div>
+                <div>Hungarian - Native speaker</div>
             </section>
             <section className="mb-10">
                 <h1 className={sectionHeader}>Hobbies</h1>

@@ -111,8 +111,8 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Assisted companies of various sizes in designing and implementing products and workflows to enhance their outcomes</li>
-                        <li>Taught senior developers Go through my course, helping them advance their careers with practical, production-level skills</li>
+                        <li>Consulted companies of various sizes in designing and implementing products and workflows to enhance their outcomes</li>
+                        <li>Built an online course that enabled senior developers to learn Go and advance their careers through practical, production-level training.</li>
                         <li>Reached over 600,000 views on YouTube through coding tutorials and podcast episodes focused on software engineering, business and AI</li>
                     </ul>
                 </div>

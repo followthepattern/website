@@ -39,6 +39,7 @@ const CV = () => {
                     </div>
                 </div>
             </header>
+            <BuiltCourses />
             <KnowledgeSharingSection />
             <ExperienceSection />
             <EducationSection />
@@ -53,6 +54,31 @@ const CV = () => {
                 <div>Brazilian jiu-jitsu: The Game of Human Chess</div>
             </section>
         </div>
+    )
+}
+
+const BuiltCourses = () => {
+    const description = "col-span-12 sm:col-span-9 sm:col-start-4";
+    const companyName = "uppercase text-xl sm:text-2xl col-span-12 font-medium border-b-2 pt-4";
+
+    return (
+        <section>
+            <h1 className={sectionHeader}>Built Online Courses</h1>
+            <div className="mx-auto max-w-2xl">
+                <div className={companyName}>L-A-B-A</div>
+                <div className={description}>
+                    Partnered with L-A-B-A, a leading online education platform, which
+                    onboarded my FP Go Online Course—a recognition of the course’s quality and
+                    relevance for senior developers.
+                </div>
+                <div className={companyName}>FP Go Online Course</div>
+                <div className={description}>
+                    Designed and built a comprehensive Go course that enables
+                    senior developers to gain production-level skills and advance
+                    their careers through practical, hands-on learning.
+                </div>
+            </div>
+        </section>
     )
 }
 
@@ -122,7 +148,7 @@ const ExperienceSection = () => {
                 <div className={secondColumn}>
                     <ul className={listStyle}>
                         <li>Consulted companies of various sizes in designing and implementing products and workflows to enhance their outcomes</li>
-                        <li>Built an online course that enabled senior developers to learn Go and advance their careers through practical, production-level training.</li>
+                        <li>Built an online course that enabled senior developers to learn Go and advance their careers through practical, production-level training</li>
                         <li>Reached over 600,000 views on YouTube through coding tutorials and podcast episodes focused on software engineering, business and AI</li>
                     </ul>
                 </div>
@@ -146,9 +172,9 @@ const ExperienceSection = () => {
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
-                        <li>Led the design and implementation of end-to-end test automation, enabling the team to achieve 20× faster testing cycles.</li>
-                        <li>Optimized cross-service communication by enhancing Go-based Kafka messaging for greater efficiency.</li>
-                        <li>Extended the product’s query language with new features, significantly accelerating output calculations through deep business and technical insight.</li>
+                        <li>Led the design and implementation of end-to-end test automation, enabling the team to achieve 20× faster testing cycles</li>
+                        <li>Optimized cross-service communication by enhancing Go-based Kafka messaging for greater efficiency</li>
+                        <li>Extended the product’s query language with new features, significantly accelerating output calculations through deep business and technical insight</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Responsibilities</div>

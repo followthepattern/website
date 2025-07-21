@@ -1,23 +1,84 @@
 import classNames from "classnames";
-import { CsabaDevYoutubeLink } from "@/lib/constants";
+import { CsabaDevYoutubeLink, PodcastYoutubeLink } from "@/lib/constants";
 import Youtube from "@/icons/Youtube";
 import Profile from "../(public)/components/profile";
 import Link from "next/link";
-import FPIcon from "@/icons/FPIcon";
 
 const sectionHeader = "mt-10 mb-8 text-2xl font-bold text-gray-900 sm:text-4xl"
 
-const EducationSection = () => {
-    const firstColumn = "col-span-4 sm:col-span-3 lg:col-span-3";
-    const secondColumn = "col-span-8 sm:col-span-9 lg:col-span-8";
+const CV = () => {
+    const techStack = ["Go", "React", "TypeScript", "JavaScript", "AWS", "Azure", "Docker", "PostgresSQL", "Kafka", "Redis", "Linux", "LLM", "Ollama", "OpenAI"]
 
     return (
+        <div className="max-w-4xl px-4 mx-auto text-gray-900 sm:px-6 lg:px-8 ">
+            <header className="flex mt-10 flex-col space-y-10 sm:space-y-14">
+                <h1 className="text-4xl font-bold text-center sm:text-6xl">
+                    Csaba Zsolt Huszka
+                </h1>
+                <div className="flex justify-center">
+                    <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
+                </div>
+                <div className="mx-auto font-light text-lg max-w-2xl">
+                    <p>I’m the founder of FollowThePattern and a software engineer focused on building AI native applications that
+                        enables companies to do lot more.
+                    </p>
+                    <p className="mt-2">
+                        With over a decade of software development experience across domains like test automation, scalable microservices,
+                        and event-driven systems, I focus on consulting with companies that want to move fast.
+                    </p>
+                </div>
+                <div className="mx-auto font-light max-w-2xl cursor-default">
+                    <p className="font-bold text-sm text-gray-900/80 mb-2">current tech stack</p>
+                    <div>
+                        {techStack.map(t => (
+                            <span key={t} className="inline-block bg-blue-100 px-2 py-0.5 m-1 border border-neutral-900 rounded-xl text-md font-bold text-neutral-900/80">
+                                {t}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            </header>
+            <KnowledgeSharingSection />
+            <ExperienceSection />
+            <EducationSection />
+            <section>
+                <h1 className={sectionHeader}>Languages</h1>
+                <div>English - Professional working proficiency</div>
+                <div>Hungarian - Native</div>
+            </section>
+            <section className="mb-10">
+                <h1 className={sectionHeader}>Hobbies</h1>
+                <div>Crossfit: When the body thrives, the mind follows</div>
+                <div>Brazilian jiu-jitsu: The Game of Human Chess</div>
+            </section>
+        </div>
+    )
+}
+
+const KnowledgeSharingSection = () => {
+    return (
         <section>
-            <h1 className={sectionHeader}>Education</h1>
-            <div className="grid grid-cols-12 gap-4">
-                <div className={firstColumn}>2013 - 2019</div>
-                <div className={secondColumn}>
-                    BSc in Geoinformatics, Faculty of Civil Engineering, Budapest University of Technology and Economics (BME), Budapest
+            <h1 className={sectionHeader}>
+                Knowledge Sharing
+            </h1>
+            <div className="mx-auto flex flex-col space-y-4 max-w-2xl">
+                <div className="">
+                    <Link className="flex space-x-4" href={CsabaDevYoutubeLink} target="_blank" rel="noreferrer">
+                        <Youtube className="w-10 h-10 fill-[#f00]" />
+                        <div className="my-auto font-medium">@CsabaDev</div>
+                    </Link>
+                    <div className="font-light">
+                        I recently launched a new channel focused on building AI-native applications
+                    </div>
+                </div>
+                <div className="">
+                    <Link className="flex space-x-4" href={PodcastYoutubeLink} target="_blank" rel="noreferrer">
+                        <Youtube className="w-10 h-10 fill-[#f00]" />
+                        <div className="my-auto font-medium">@FollowThePattern Podcast</div>
+                    </Link>
+                    <div className="font-light">
+                        A show exploring IT, business, and science topics, with over 600K+ views across platforms
+                    </div>
                 </div>
             </div>
         </section>
@@ -223,61 +284,20 @@ const ExperienceSection = () => {
     )
 }
 
-const CV = () => {
-    const techStack = ["Go", "React", "TypeScript", "Databases", "Kafka", "Redis", "Docker", "Linux", "LLM", "Ollama", "OpenAI"]
+const EducationSection = () => {
+    const firstColumn = "col-span-4 sm:col-span-3 lg:col-span-3";
+    const secondColumn = "col-span-8 sm:col-span-9 lg:col-span-8";
 
     return (
-        <div className="max-w-4xl px-4 mx-auto text-gray-900 sm:px-6 lg:px-8 ">
-            <header className="flex mt-10 flex-col space-y-10 sm:space-y-14">
-                <h1 className="text-4xl font-bold text-center sm:text-6xl">
-                    Csaba Zsolt Huszka
-                </h1>
-                <div className="flex justify-center">
-                    <Profile className="w-40 h-40 rounded-full sm:rounded-[8px]" />
+        <section>
+            <h1 className={sectionHeader}>Education</h1>
+            <div className="grid grid-cols-12 gap-4">
+                <div className={firstColumn}>2013 - 2019</div>
+                <div className={secondColumn}>
+                    BSc in Geoinformatics, Faculty of Civil Engineering, Budapest University of Technology and Economics (BME), Budapest
                 </div>
-                <div className="mx-auto font-light text-lg max-w-2xl">
-                    <p>I’m the founder of FollowThePattern and a software engineer focused on building AI native applications that
-                        enables companies to do lot more.
-                    </p>
-                    <p className="mt-2">
-                        With over a decade of software development experience across domains like test automation, scalable microservices,
-                        and event-driven systems, I focus on consulting with companies that want to move fast.
-                    </p>
-                </div>
-                <div className="mx-auto font-light max-w-2xl cursor-default">
-                    <p className="font-bold text-sm text-gray-900/80 mb-2">current tech stack</p>
-                    <div>
-                        {techStack.map(t => (
-                            <span key={t} className="inline-block bg-blue-100 px-2 py-0.5 m-1 border border-neutral-900 rounded-xl text-md font-bold text-neutral-900/80">
-                                {t}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-                <div className="mx-auto space-x-8 flex">
-                    <Link className="flex space-x-4" href="/" target="_blank" rel="noreferrer">
-                        <FPIcon className="w-10 h-10 fill-blue-500" />
-                        <div className="my-auto font-medium">Follow The Pattern</div>
-                    </Link>
-                    <Link className="flex space-x-4" href={CsabaDevYoutubeLink} target="_blank" rel="noreferrer">
-                        <Youtube className="w-10 h-10 fill-[#f00]" />
-                        <div className="my-auto font-medium">@CsabaDev</div>
-                    </Link>
-                </div>
-            </header>
-            <ExperienceSection />
-            <EducationSection />
-            <section>
-                <h1 className={sectionHeader}>Languages</h1>
-                <div>English - Professional working proficiency</div>
-                <div>Hungarian - Native</div>
-            </section>
-            <section className="mb-10">
-                <h1 className={sectionHeader}>Hobbies</h1>
-                <div>Crossfit: When the body thrives, the mind follows</div>
-                <div>Brazilian jiu-jitsu: The Game of Human Chess</div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

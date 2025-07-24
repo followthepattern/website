@@ -8,7 +8,7 @@ import Github from "@/icons/Github";
 const sectionHeader = "mt-10 mb-8 text-2xl font-bold text-gray-900 sm:text-4xl"
 
 const CV = () => {
-    const techStack = ["Go", "React", "TypeScript", "JavaScript", "AWS", "Azure", "Docker", "PostgresSQL", "Kafka", "Redis", "Linux", "LLM", "Ollama", "OpenAI"]
+    const techStack = ["Go", "React", "TypeScript", "JavaScript", "AWS", "Azure", "Docker", "PostgresSQL", "Kafka", "Redis", "Linux", "LLM", "Ollama", "OpenAI", "Claude"]
 
     return (
         <div className="max-w-4xl px-4 mx-auto text-gray-900 sm:px-6 lg:px-8 ">

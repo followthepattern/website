@@ -276,5 +276,29 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast21.mp3",
         type: "audio/mpeg"
     },
+}, {
+    id: "22",
+    title: "Kvantumszámítógép, Kvantumfizika, Kódtörés",
+    guest: "Dr. Asbóth János",
+    lang: "HUN",
+    playing: false,
+    description: `Ebben az epizódban Dr. Asbóth János egyetemi docens a vendégem. A kvantumszámítógépek működéséről fogunk beszélni. Annak előnyeiről és hátrányairól és egy keveset érinteni fogjuk a kvantumfizikát is.`,
+    published: "29 Jun 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast21.mp3",
+        type: "audio/mpeg"
+    },
+}, {
+    id: "23",
+    title: "Nagy Richárd versenyfelkészülése, Testépítés életmódformáló ereje, Hajhullás",
+    guest: "Kovács Martin",
+    lang: "HUN",
+    playing: false,
+    description: `Vendégem Kovács Martin felkészítő edző, akivel Nagy Richárd versenyfelkészüléséről, a sport és a testépítés életmódra gyakorolt hatásairól, valamint a hajhullás lehetséges okairól és megelőzéséről beszélgetünk.`,
+    published: "10 Aug 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast23.mp3",
+        type: "audio/mpeg"
+    },
 }
 ]

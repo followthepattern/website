@@ -285,7 +285,7 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
     description: `Ebben az epizódban Dr. Asbóth János egyetemi docens a vendégem. A kvantumszámítógépek működéséről fogunk beszélni. Annak előnyeiről és hátrányairól és egy keveset érinteni fogjuk a kvantumfizikát is.`,
     published: "29 Jun 2025",
     audio: {
-        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast21.mp3",
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast22.mp3",
         type: "audio/mpeg"
     },
 }, {

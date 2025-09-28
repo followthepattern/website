@@ -300,5 +300,17 @@ Ezúttal a Israel - Hamász között zajló háborúról fogunk beszélni, annak
         src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast23.mp3",
         type: "audio/mpeg"
     },
+}, {
+    id: "24",
+    title: "Ausztriában épített karriert magyar stand-upos",
+    guest: "Vámos Tamás",
+    lang: "HUN",
+    playing: false,
+    description: `Vámos Tamás, Ausztriában élő magyar stand-up komikus a vendégem. Pályafutásáról és a stand-upról, mint üzletről fogunk beszélgetünk. Szó lesz továbbá a poénokban megjelenő kulturális különbségekről is.`,
+    published: "29 Sept 2025",
+    audio: {
+        src: "https://followthepattern.s3.us-east-2.amazonaws.com/episodes/podcast24.mp3",
+        type: "audio/mpeg"
+    },
 }
 ]

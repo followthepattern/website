@@ -144,7 +144,7 @@ const ExperienceSection = () => {
             <div className={experienceTable}>
                 <div className={companyName}>Nu Tech</div>
                 <div className={dateColumn}>Dec 2025 – Present</div>
-                <div className={titleColumn}>Tech Lead & Senior GoLang Engineer</div>
+                <div className={titleColumn}>Senior GoLang Engineer</div>
                 <div className={dateColumnMobile}>Dec 2025 – Present</div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>

@@ -140,8 +140,33 @@ const ExperienceSection = () => {
 
     return (
         <section>
-            {/* <h1 className={sectionHeader}>Experience</h1>
+            <h1 className={sectionHeader}>Experience</h1>
             <div className={experienceTable}>
+                <div className={companyName}>Nu Tech</div>
+                <div className={dateColumn}>Dec 2025 – Present</div>
+                <div className={titleColumn}>Senior GoLang Engineer</div>
+                <div className={dateColumnMobile}>Dec 2025 – Present</div>
+                <div className={subSectionTitle}>Achievements</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Architected an AI-powered education platform from the ground up in Go, establishing the full service architecture, technical standards, and engineering foundation</li>
+                        <li>Drove end-to-end technical leadership—from system design and API contracts to team execution—enabling fast, high-quality delivery from day one</li>
+                        <li>Designed scalable, distributed backend services built for performance and reliability, applying microservice and clean architecture principles throughout</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Design and architect Go-based backend services and distributed system components from scratch, defining patterns, boundaries, and integration contracts</li>
+                        <li>Lead and mentor engineers through code reviews, pair programming, and design sessions to ensure consistent quality and knowledge growth across the team</li>
+                        <li>Translate product and business requirements into concrete technical roadmaps and scalable solutions, owning key architectural decisions end-to-end</li>
+                        <li>Build and maintain RESTful APIs and internal service communication for an AI-driven education platform, ensuring production-grade performance and reliability</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Technologies</div>
+                <div className={technologies}>GoLang, AI/LLM, Microservices, PostgreSQL, Docker, K8s, REST APIs</div>
+            </div>
+            {/* <div className={experienceTable}>
                 <div className={companyName}>Follow The Pattern</div>
                 <div className={dateColumn}>May 2022 – Present</div>
                 <div className={titleColumn}>Founder</div>
@@ -168,9 +193,9 @@ const ExperienceSection = () => {
             </div> */}
             <div className={experienceTable}>
                 <div className={companyName}>BlackRock</div>
-                <div className={dateColumn}>May 2022 – Present</div>
+                <div className={dateColumn}>May 2022 – Sep 2025</div>
                 <div className={titleColumn}>Senior GoLang developer</div>
-                <div className={dateColumnMobile}>May 2022 – Present</div>
+                <div className={dateColumnMobile}>May 2022 – Sep 2025</div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>

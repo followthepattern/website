@@ -143,9 +143,9 @@ const ExperienceSection = () => {
             <h1 className={sectionHeader}>Experience</h1>
             <div className={experienceTable}>
                 <div className={companyName}>Nu Tech</div>
-                <div className={dateColumn}>Dec 2024 – Present</div>
+                <div className={dateColumn}>Dec 2025 – Present</div>
                 <div className={titleColumn}>Tech Lead & Senior GoLang Engineer</div>
-                <div className={dateColumnMobile}>Dec 2024 – Present</div>
+                <div className={dateColumnMobile}>Dec 2025 – Present</div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>
@@ -193,9 +193,9 @@ const ExperienceSection = () => {
             </div> */}
             <div className={experienceTable}>
                 <div className={companyName}>BlackRock</div>
-                <div className={dateColumn}>May 2022 – Sep 2024</div>
+                <div className={dateColumn}>May 2022 – Sep 2025</div>
                 <div className={titleColumn}>Senior GoLang developer</div>
-                <div className={dateColumnMobile}>May 2022 – Sep 2024</div>
+                <div className={dateColumnMobile}>May 2022 – Sep 2025</div>
                 <div className={subSectionTitle}>Achievements</div>
                 <div className={secondColumn}>
                     <ul className={listStyle}>

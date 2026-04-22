@@ -52,9 +52,9 @@ export default function Home() {
                 and supporting long-term growth.
               </p>
             </div>
-              <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
-                <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />
-              </div>
+            <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
+              <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />
+            </div>
           </div>
         </PatternBackground>
       </header>
@@ -84,8 +84,8 @@ export default function Home() {
               We help you go from prototype to deployable AI-powered app.
             </Card.Body>
             <Card.Footer>
-              <Card.Link href="/book">
-                Book a Free Call
+              <Card.Link href="/contact">
+                Send us a Message
               </Card.Link>
             </Card.Footer>
           </Card>
@@ -123,12 +123,12 @@ export default function Home() {
             Let{"'"} Connect
           </Section.Title>
           <Section.Subtitle className="text-white pb-10">
-            Have questions or want to discuss your ideas? Book a free 30-minute call with us and Let{"'"} chat!
+            Have questions or want to discuss your ideas? Reach out and let{"'"}s chat!
           </Section.Subtitle>
           <div className="flex justify-center">
-            <Link href="/book" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
-              Book a Free Call
-            </Link>
+            <a href="mailto:csaba@followthepattern.net" className="bg-white hover:bg-neutral-100 active:bg-neutral-200 rounded-3xl font-semibold px-4 py-2 text-lg shadow-md">
+              Reach Out via Email
+            </a>
           </div>
         </Section>
       </div>

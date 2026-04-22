@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const navigation = {
     company: [
-        { name: 'Book a Free Call', href: '/book' },
+        { name: 'STRV.AI', href: 'https://strv.ai', target: '_blank' },
         { name: 'Blog', href: '/blog' },
         { name: 'Podcast', href: '/podcast' },
         { name: 'Contact', href: '/contact' },
@@ -33,6 +33,12 @@ export default function Footer(props: FooterProperties) {
                         <p className="text-sm leading-6 text-gray-600 font-light">
                             Building applications that enable companies to do more
                         </p>
+                        <p className="text-sm leading-6 text-gray-600 font-light">
+                            Get in touch:{" "}
+                            <a href="mailto:csaba@followthepattern.net" className="text-blue-600 hover:text-blue-700">
+                                csaba@followthepattern.net
+                            </a>
+                        </p>
                     </div>
                     <div className="grid grid-cols-2 gap-8 mt-10">
                         <div>
@@ -40,7 +46,7 @@ export default function Footer(props: FooterProperties) {
                             <ul role="list" className="mt-6 space-y-4">
                                 {navigation.company.map((item) => (
                                     <li key={item.name}>
-                                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                                        <Link href={item.href} target={item.target} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                                             {item.name}
                                         </Link>
                                     </li>

@@ -146,6 +146,18 @@ export default function Home() {
           With over a decade of software development experience across domains like test automation,
           scalable microservices, and event-driven systems, I focus on delivering solutions for companies that want to move fast.
         </p>
+        <p className="max-w-lg lg:max-w-xl mx-auto font-light text-lg text-center">
+          Previously collaborated with{" "}
+          <a
+            href="https://strv.ai"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-blue-600 hover:text-blue-700 underline"
+          >
+            strv.ai
+          </a>
+          {" "}on building AI-powered products.
+        </p>
         <Socials className="justify-center" />
       </Section>
       <Footer />

@@ -152,6 +152,7 @@ const ExperienceSection = () => {
                         <li>Consulted companies of various sizes in designing and implementing products and workflows to enhance their outcomes</li>
                         <li>Built an online course that enabled senior developers to learn Go and advance their careers through practical, production-level training</li>
                         <li>Reached over 600,000 views on YouTube through coding tutorials and podcast episodes focused on software engineering, business and AI</li>
+                        <li>Built strv.ai, an AI-native fitness platform using Go and React TypeScript, serving mobile application clients</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Responsibilities</div>
@@ -159,12 +160,30 @@ const ExperienceSection = () => {
                     <ul className={listStyle}>
                         <li>Collaborate with companies to design and implement features and workflows that enhance business outcomes</li>
                         <li>Design and develop AI-native applications that empower organizations to significantly increase productivity</li>
+                        <li>Design and develop strv.ai, a full-stack AI-native fitness platform with Go backend and React TypeScript frontend, including mobile application clients</li>
                         <li>Create and manage online coding courses, primarily focused on Go programming</li>
                         <li>Educate and share technical knowledge through a podcast and YouTube channel, reaching a combined audience of over 600,000 views</li>
                     </ul>
                 </div>
                 <div className={subSectionTitle}>Technologies</div>
                 <div className={technologies}>GoLang, TypeScript, React, Ollama, LLM, OpenAI</div>
+            </div>
+            <div className={experienceTable}>
+                <div className={companyName}>Nu Education</div>
+                <div className={dateColumn}>Present</div>
+                <div className={titleColumn}>Senior Go Software Engineer</div>
+                <div className={dateColumnMobile}>Present</div>
+                <div className={subSectionTitle}>Responsibilities</div>
+                <div className={secondColumn}>
+                    <ul className={listStyle}>
+                        <li>Building an AI-native education platform from scratch using Go</li>
+                        <li>Tech leading the development team and driving architectural decisions</li>
+                        <li>Teaching non-Go engineers to write Go code efficiently</li>
+                        <li>Building and managing deployment infrastructure for the education platform</li>
+                    </ul>
+                </div>
+                <div className={subSectionTitle}>Technologies</div>
+                <div className={technologies}>GoLang, LLM, Postgres, Cerbos, Keycloak, Scaleway</div>
             </div>
             <div className={experienceTable}>
                 <div className={companyName}>BlackRock</div>

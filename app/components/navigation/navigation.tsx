@@ -18,6 +18,16 @@ export interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     {
+        name: 'Apps', href: '#', children: [
+            {
+                name: "STRV.AI",
+                href: "https://strv.ai",
+                description: 'AI Powered Health & Fitness platform for athletes and coaches.',
+                target: "_blank"
+            },
+        ]
+    },
+    {
         name: 'Courses', href: '#', children: [
             {
                 name: "Go Basic",

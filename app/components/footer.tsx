@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const navigation = {
     company: [
-        { name: 'Book a Free Call', href: '/book' },
+        { name: 'STRV.AI', href: 'https://strv.ai', target: '_blank' },
         { name: 'Blog', href: '/blog' },
         { name: 'Podcast', href: '/podcast' },
         { name: 'Contact', href: '/contact' },
@@ -46,7 +46,7 @@ export default function Footer(props: FooterProperties) {
                             <ul role="list" className="mt-6 space-y-4">
                                 {navigation.company.map((item) => (
                                     <li key={item.name}>
-                                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                                        <Link href={item.href} target={item.target} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                                             {item.name}
                                         </Link>
                                     </li>

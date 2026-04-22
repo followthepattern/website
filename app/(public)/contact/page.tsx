@@ -1,5 +1,3 @@
-import ContactForm from "./components/Contact";
-import Section from "../../components/section";
 import PatternBackground from "../../components/patternBackground";
 import Footer from "../../components/footer";
 
@@ -18,9 +16,6 @@ const Contact = () => {
                     </p>
                 </PatternBackground>
             </header>
-            <Section>
-                <ContactForm />
-            </Section>
             <Footer />
         </>
     );

@@ -51,6 +51,17 @@ export default function Home() {
                 enable companies to do more through software — enhancing functionality, improving efficiency,
                 and supporting long-term growth.
               </p>
+              <div className="mx-auto lg:mx-2 xl:mx-auto max-w-xl flex flex-col sm:flex-row items-center gap-3">
+                <a
+                  href="https://app.strv.ai"
+                  className="rounded-lg bg-blue-600 px-5 py-3 text-white font-semibold shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                >
+                  Sign up for free
+                </a>
+                <span className="text-gray-700 text-base font-light">
+                  Want to try it out? Get started at <span className="font-medium">app.strv.ai</span>.
+                </span>
+              </div>
             </div>
             <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
               <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />

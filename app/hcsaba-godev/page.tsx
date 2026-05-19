@@ -9,6 +9,7 @@ const sectionHeader = "mt-10 mb-8 text-2xl font-bold text-gray-900 sm:text-4xl"
 
 const CV = () => {
     const techStack = ["Go", "React", "TypeScript", "JavaScript", "AWS", "Azure", "Docker", "PostgresSQL", "Kafka", "Redis", "Linux", "LLM", "Ollama", "OpenAI", "Claude"]
+    const learningStack = ["Rust", "Embedded Linux", "Robotics fundamentals", "Real-time systems"]
 
     return (
         <div className="max-w-4xl px-4 mx-auto text-gray-900 sm:px-6 lg:px-8 ">
@@ -21,12 +22,17 @@ const CV = () => {
                 </div>
                 <div className="mx-auto font-light text-lg max-w-2xl space-y-2">
                     <p>
-                        I work with startups and scale-ups, collaborating with CTOs and
-                        mentoring development teams to build products that align with both business and technical requirements.
+                        Senior software engineer with 10+ years building distributed, concurrent, Linux-based
+                        backend systems — now actively pivoting toward robotics and hardware-close engineering.
                     </p>
                     <p>
-                        Founder of FollowThePattern and a software engineer focused on building AI native applications that
-                        enables companies to do lot more.
+                        Currently learning Rust as a path into embedded and robotics systems, building on a
+                        Geoinformatics background (spatial data, geometry, sensor-derived signals) and a career
+                        spent on real-time data pipelines, concurrency and Linux.
+                    </p>
+                    <p>
+                        Founder of FollowThePattern, collaborating with CTOs and engineering teams to ship
+                        products that have to be reliable, fast and grounded in reality.
                     </p>
                 </div>
                 <div className="mx-auto font-light max-w-2xl cursor-default">
@@ -38,8 +44,17 @@ const CV = () => {
                             </span>
                         ))}
                     </div>
+                    <p className="font-bold text-sm text-gray-900/80 mb-2 mt-4">currently learning — toward robotics & hardware</p>
+                    <div>
+                        {learningStack.map(t => (
+                            <span key={t} className="inline-block bg-amber-100 px-2 py-0.5 m-1 border border-neutral-900 border-dashed rounded-xl text-md font-bold text-neutral-900/80">
+                                {t}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </header>
+            <DirectionSection />
             <BuiltCourses />
             <KnowledgeSharingSection />
             <ExperienceSection />
@@ -56,6 +71,46 @@ const CV = () => {
                 <div>Brazilian jiu-jitsu: The Game of Human Chess</div>
             </section>
         </div>
+    )
+}
+
+const DirectionSection = () => {
+    const listStyle = "list-disc list-inside font-light";
+
+    return (
+        <section>
+            <h1 className={sectionHeader}>Direction — Robotics & Hardware-Close Systems</h1>
+            <div className="mx-auto max-w-2xl space-y-4 font-light">
+                <p>
+                    I am openly transitioning toward robotics, embedded and hardware-close engineering.
+                    I do not have production hardware experience yet — I have a strong systems-software
+                    foundation and I am committed to closing the gap.
+                </p>
+                <div>
+                    <p className="font-medium text-gray-900">What transfers from my background</p>
+                    <ul className={listStyle}>
+                        <li>Geoinformatics BSc (BME): coordinate systems, geometry, spatial data and sensor-derived datasets — the same primitives that underpin perception, SLAM and mapping</li>
+                        <li>10+ years of Linux and concurrency-heavy backend work, including Go-based Kafka messaging tuned for low latency and high throughput</li>
+                        <li>End-to-end test automation experience that maps naturally to hardware-in-the-loop and simulation testing</li>
+                        <li>DevOps and CI/CD experience relevant to robotics fleet tooling, OTA updates and reproducible builds</li>
+                    </ul>
+                </div>
+                <div>
+                    <p className="font-medium text-gray-900">What I am actively learning</p>
+                    <ul className={listStyle}>
+                        <li>Rust — chosen as my primary path into embedded and robotics systems</li>
+                        <li>Embedded Linux fundamentals and resource-constrained programming</li>
+                        <li>Real-time systems thinking: scheduling, deterministic latency, sensor fusion</li>
+                        <li>Robotics fundamentals: kinematics, control loops, and the surrounding software stack</li>
+                    </ul>
+                </div>
+                <p>
+                    I am looking for teams that value strong software engineering fundamentals and are
+                    willing to grow an engineer into the hardware side. I learn fast, I share what I
+                    learn publicly, and I am excited to do that in this domain.
+                </p>
+            </div>
+        </section>
     )
 }
 
@@ -194,7 +249,7 @@ const ExperienceSection = () => {
                 <div className={secondColumn}>
                     <ul className={listStyle}>
                         <li>Led the design and implementation of end-to-end test automation, enabling the team to achieve 20× faster testing cycles</li>
-                        <li>Optimized cross-service communication by enhancing Go-based Kafka messaging for greater efficiency</li>
+                        <li>Optimized cross-service communication by tuning Go-based Kafka messaging for lower latency and higher throughput across a concurrent, distributed pipeline</li>
                         <li>Extended the product’s query language with new features, significantly accelerating output calculations through deep business and technical insight</li>
                     </ul>
                 </div>
@@ -352,6 +407,10 @@ const EducationSection = () => {
                 <div className={firstColumn}>2013 - 2019</div>
                 <div className={secondColumn}>
                     BSc in Geoinformatics, Faculty of Civil Engineering, Budapest University of Technology and Economics (BME), Budapest
+                    <div className="font-light text-gray-700 mt-1">
+                        Coursework in coordinate systems, geometry, spatial data and sensor-derived
+                        datasets — the same foundations used in robotics perception, SLAM and mapping.
+                    </div>
                 </div>
             </div>
         </section>

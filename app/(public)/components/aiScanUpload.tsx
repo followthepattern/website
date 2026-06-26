@@ -196,49 +196,60 @@ export default function AIScanUpload({ className }: AIScanUploadProperties) {
 
     const pill = status[phase];
 
+    const spring = {
+        stiffness: 700,
+        damping: 30,
+    };
+
     return (
-        <div
-            className={classNames(
-                className,
-                "overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl"
-            )}
-        >
-            <div className="flex items-center justify-between border-b border-gray-100 px-5 py-3.5">
-                <div className="flex items-center space-x-2.5">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
-                        <FPIcon className="h-4 w-4 text-blue-500" />
+        <div className={classNames(className, "")}>
+            <p className="pl-2 sm:pl-2.5 pb-1 italic text-lg sm:text-xl sm:pb-2 text-neutral-800">
+                We build everything...
+            </p>
+            <div className="border-4 border-dashed p-[1px] sm:p-2 rounded-lg border-gray-400">
+                <motion.div
+                    layout
+                    transition={spring}
+                    className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+                >
+                    <div className="flex items-center justify-between border-b border-gray-100 px-5 py-3.5">
+                        <div className="flex items-center space-x-2.5">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+                                <FPIcon className="h-4 w-4 text-blue-500" />
+                            </div>
+                            <span className="text-sm font-semibold text-gray-900">AI Document Scanner</span>
+                        </div>
+                        <AnimatePresence mode="wait">
+                            <motion.span
+                                key={pill.text}
+                                initial={{ opacity: 0, y: -4 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 4 }}
+                                transition={{ duration: 0.2 }}
+                                className={classNames(
+                                    "rounded-full px-2.5 py-1 text-xs font-medium",
+                                    pill.className
+                                )}
+                            >
+                                {pill.text}
+                            </motion.span>
+                        </AnimatePresence>
                     </div>
-                    <span className="text-sm font-semibold text-gray-900">AI Document Scanner</span>
-                </div>
-                <AnimatePresence mode="wait">
-                    <motion.span
-                        key={pill.text}
-                        initial={{ opacity: 0, y: -4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 4 }}
-                        transition={{ duration: 0.2 }}
-                        className={classNames(
-                            "rounded-full px-2.5 py-1 text-xs font-medium",
-                            pill.className
-                        )}
-                    >
-                        {pill.text}
-                    </motion.span>
-                </AnimatePresence>
-            </div>
-            <div className="relative h-[320px] p-6">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={phase}
-                        initial={{ opacity: 0, y: 12 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -12 }}
-                        transition={{ duration: 0.3 }}
-                        className="h-full"
-                    >
-                        {renderPhase(phase)}
-                    </motion.div>
-                </AnimatePresence>
+                    <div className="relative h-[320px] p-6">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={phase}
+                                initial={{ opacity: 0, y: 12 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -12 }}
+                                transition={{ duration: 0.3 }}
+                                className="h-full"
+                            >
+                                {renderPhase(phase)}
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
+                </motion.div>
             </div>
         </div>
     );

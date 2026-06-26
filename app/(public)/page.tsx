@@ -53,7 +53,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
-              <AIScanUpload className="mt-10 w-full max-w-[460px]" />
+              <AIScanUpload className="mt-10 w-[480px] rounded-lg" />
             </div>
           </div>
         </PatternBackground>

@@ -30,7 +30,7 @@ const links: LinkItem[] = [
         label: "Apps",
         description: "Products we build and ship",
         children: [
-            { label: "Atlasz", description: "AI-powered Transport Management System", href: "https://www.atlasz.eu", target: "_blank" },
+            { label: "Atlasz", description: "AI-powered Transport Management System that brings your fleet, routes, and freight into one intelligent workspace.", href: "https://www.atlasz.eu", target: "_blank" },
             { label: "STRV.AI", description: "AI-powered nutrition & training coach", href: "https://strv.ai", target: "_blank" },
         ],
     },
@@ -104,9 +104,13 @@ export default function LinksPage() {
         <main className="min-h-screen">
             <PatternBackground className="flex min-h-screen flex-col items-center px-6 py-16 sm:py-24">
                 <header className="flex flex-col items-center text-center">
-                    <div className="flex h-24 w-24 items-center justify-center rounded-3xl bg-white shadow-md">
+                    <Link
+                        href="/"
+                        aria-label="Go to Follow The Pattern home"
+                        className="flex h-24 w-24 items-center justify-center rounded-3xl bg-white shadow-md transition ease-in-out duration-150 hover:scale-105 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                    >
                         <FPIcon className="h-12 w-12 text-blue-500" />
-                    </div>
+                    </Link>
                     <h1 className="mt-6 text-3xl font-bold text-gray-900 sm:text-4xl">
                         Follow The Pattern
                     </h1>

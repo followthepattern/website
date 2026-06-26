@@ -22,7 +22,7 @@ const navigation: NavigationItem[] = [
             {
                 name: "Atlasz",
                 href: "https://www.atlasz.eu",
-                description: 'AI-powered Transport Management System',
+                description: 'AI-powered Transport Management System that brings your fleet, routes, and freight into one intelligent workspace.',
                 target: "_blank"
             },
             {

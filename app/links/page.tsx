@@ -5,51 +5,70 @@ import PatternBackground from "../components/patternBackground";
 import Credits from "../(public)/components/credits";
 import FPIcon from "@/icons/FPIcon";
 import RightArrowIcon from "@/icons/RightArrowIcon";
+import ChevronDownIcon from "@/icons/ChevronDownIcon";
 
 export const metadata: Metadata = {
     title: "Follow The Pattern — Links",
-    description: "All of Follow The Pattern in one place — services, blog, podcast, courses and how to get in touch.",
+    description: "All of Follow The Pattern in one place — apps, podcast, courses and how to get in touch.",
 };
 
-interface LinkItem {
+interface LinkLeaf {
     label: string;
     description?: string;
     href: string;
+    target?: string;
+}
+
+interface LinkItem extends Partial<LinkLeaf> {
+    label: string;
+    children?: LinkLeaf[];
 }
 
 const links: LinkItem[] = [
-    { label: "Services", description: "Build AI-powered apps with us", href: "/services" },
-    { label: "Blog", description: "Lessons from building AI-powered apps", href: "/blog" },
+    {
+        label: "Apps",
+        description: "Products we build and ship",
+        children: [
+            { label: "STRV.AI", description: "AI-powered nutrition & training coach", href: "https://strv.ai", target: "_blank" },
+        ],
+    },
     { label: "Podcast", description: "Conversations on modern software", href: "/podcast" },
-    { label: "Go Basic Course", description: "Start writing Go from the ground up", href: "/learn/en/gobasic" },
-    { label: "Go Advanced Course", description: "Level up your Go skills", href: "/learn/en/goadvanced" },
-    { label: "Book a Call", description: "Schedule a meeting with us", href: "/book" },
-    { label: "Contact", description: "Send us a message", href: "/contact" },
+    {
+        label: "Courses",
+        description: "Learn to build with us",
+        children: [
+            { label: "Go Basic", description: "Start writing Go from the ground up", href: "/learn/en/gobasic" },
+            { label: "Go Advanced", description: "Level up your Go skills", href: "/learn/en/goadvanced" },
+        ],
+    },
     { label: "Email Us", description: "csaba@followthepattern.net", href: "mailto:csaba@followthepattern.net" },
 ];
 
-interface LinkButtonProperties {
-    item: LinkItem;
+const itemClassName =
+    "group flex items-center justify-between w-full rounded-lg border border-gray-200 bg-white px-5 py-4 shadow-md transition ease-in-out duration-150 hover:bg-gray-50 hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700";
+
+function ItemLabel({ label, description }: { label: string; description?: string }) {
+    return (
+        <span className="flex flex-col text-left">
+            <span className="text-lg font-medium text-gray-900">{label}</span>
+            {description && <span className="text-sm font-light text-gray-500">{description}</span>}
+        </span>
+    );
 }
 
-function LinkButton({ item }: LinkButtonProperties) {
-    const className = "group flex items-center justify-between w-full rounded-lg border border-gray-200 bg-white px-5 py-4 shadow-md transition ease-in-out duration-150 hover:bg-gray-50 hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700";
-
+function LeafLink({ item, nested }: { item: LinkLeaf; nested?: boolean }) {
     const content = (
         <>
-            <span className="flex flex-col text-left">
-                <span className="text-lg font-medium text-gray-900">{item.label}</span>
-                {item.description && (
-                    <span className="text-sm font-light text-gray-500">{item.description}</span>
-                )}
-            </span>
+            <ItemLabel label={item.label} description={item.description} />
             <RightArrowIcon className="ml-4 h-5 w-5 flex-none text-gray-400 transition-transform ease-in-out duration-150 group-hover:translate-x-1 group-hover:text-blue-600" />
         </>
     );
 
-    if (item.href.startsWith("mailto:")) {
+    const className = classNames(itemClassName, nested && "bg-gray-50/80");
+
+    if (item.href.startsWith("mailto:") || item.target) {
         return (
-            <a href={item.href} className={className}>
+            <a href={item.href} target={item.target} rel={item.target === "_blank" ? "noreferrer" : undefined} className={className}>
                 {content}
             </a>
         );
@@ -59,6 +78,22 @@ function LinkButton({ item }: LinkButtonProperties) {
         <Link href={item.href} className={className}>
             {content}
         </Link>
+    );
+}
+
+function DropdownItem({ item }: { item: LinkItem }) {
+    return (
+        <details className="group w-full">
+            <summary className={classNames(itemClassName, "cursor-pointer list-none [&::-webkit-details-marker]:hidden")}>
+                <ItemLabel label={item.label} description={item.description} />
+                <ChevronDownIcon className="ml-4 h-5 w-5 flex-none text-gray-400 transition-transform ease-in-out duration-150 group-open:rotate-180 group-hover:text-blue-600" />
+            </summary>
+            <div className="mt-3 flex flex-col space-y-3 pl-4">
+                {item.children!.map((child) => (
+                    <LeafLink key={child.href} item={child} nested />
+                ))}
+            </div>
+        </details>
     );
 }
 
@@ -78,9 +113,13 @@ export default function LinksPage() {
                     </p>
                 </header>
                 <div className="mt-12 flex w-full max-w-md flex-col space-y-4">
-                    {links.map((item) => (
-                        <LinkButton key={item.href} item={item} />
-                    ))}
+                    {links.map((item) =>
+                        item.children ? (
+                            <DropdownItem key={item.label} item={item} />
+                        ) : (
+                            <LeafLink key={item.href} item={item as LinkLeaf} />
+                        )
+                    )}
                 </div>
                 <div className="w-full max-w-md">
                     <Credits />

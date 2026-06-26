@@ -20,6 +20,12 @@ const navigation: NavigationItem[] = [
     {
         name: 'Apps', href: '#', children: [
             {
+                name: "Atlasz",
+                href: "https://www.atlasz.eu",
+                description: 'AI-powered Transport Management System that brings your fleet, routes, and freight into one intelligent workspace.',
+                target: "_blank"
+            },
+            {
                 name: "STRV.AI",
                 href: "https://strv.ai",
                 description: 'AI Powered Health & Fitness platform for athletes and coaches.',

@@ -6,6 +6,7 @@ import Credits from "../(public)/components/credits";
 import FPIcon from "@/icons/FPIcon";
 import RightArrowIcon from "@/icons/RightArrowIcon";
 import ChevronDownIcon from "@/icons/ChevronDownIcon";
+import MiniChat from "./components/MiniChat";
 
 export const metadata: Metadata = {
     title: "Follow The Pattern — Links",
@@ -112,7 +113,8 @@ export default function LinksPage() {
                         Building applications that enable companies to do more
                     </p>
                 </header>
-                <div className="mt-12 flex w-full max-w-md flex-col space-y-4">
+                <MiniChat className="mt-10 max-w-md" />
+                <div className="mt-6 flex w-full max-w-md flex-col space-y-4">
                     {links.map((item) =>
                         item.children ? (
                             <DropdownItem key={item.label} item={item} />

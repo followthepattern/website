@@ -30,6 +30,7 @@ const links: LinkItem[] = [
         label: "Apps",
         description: "Products we build and ship",
         children: [
+            { label: "Atlasz", description: "AI-powered Transport Management System", href: "https://www.atlasz.eu", target: "_blank" },
             { label: "STRV.AI", description: "AI-powered nutrition & training coach", href: "https://strv.ai", target: "_blank" },
         ],
     },

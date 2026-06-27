@@ -7,6 +7,28 @@ import CheckIcon from "@/icons/CheckIcon";
 import FPIcon from "@/icons/FPIcon";
 import Spin from "@/icons/Spin";
 
+/* ------------------------------------------------------------------ */
+/* Shared frame header                                                 */
+/* ------------------------------------------------------------------ */
+
+function ScreenHeader({ title, right }: { title: string; right: React.ReactNode }) {
+    return (
+        <div className="flex items-center justify-between border-b border-gray-100 px-5 py-3.5">
+            <div className="flex items-center space-x-2.5">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+                    <FPIcon className="h-4 w-4 text-blue-500" />
+                </div>
+                <span className="text-sm font-semibold text-gray-900">{title}</span>
+            </div>
+            {right}
+        </div>
+    );
+}
+
+/* ------------------------------------------------------------------ */
+/* Screen 1 — AI document scanner                                      */
+/* ------------------------------------------------------------------ */
+
 type Phase = "upload" | "scan" | "extract" | "done";
 
 const order: Phase[] = ["upload", "scan", "extract", "done"];
@@ -166,11 +188,7 @@ function renderPhase(phase: Phase) {
     }
 }
 
-interface AIScanUploadProperties {
-    className?: string;
-}
-
-export default function AIScanUpload({ className }: AIScanUploadProperties) {
+function ScannerScreen() {
     const [phase, setPhase] = useState<Phase>("upload");
 
     useEffect(() => {
@@ -196,6 +214,198 @@ export default function AIScanUpload({ className }: AIScanUploadProperties) {
 
     const pill = status[phase];
 
+    return (
+        <>
+            <ScreenHeader
+                title="AI Document Scanner"
+                right={
+                    <AnimatePresence mode="wait">
+                        <motion.span
+                            key={pill.text}
+                            initial={{ opacity: 0, y: -4 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 4 }}
+                            transition={{ duration: 0.2 }}
+                            className={classNames("rounded-full px-2.5 py-1 text-xs font-medium", pill.className)}
+                        >
+                            {pill.text}
+                        </motion.span>
+                    </AnimatePresence>
+                }
+            />
+            <div className="relative h-[320px] p-6">
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={phase}
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{ duration: 0.3 }}
+                        className="h-full"
+                    >
+                        {renderPhase(phase)}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
+        </>
+    );
+}
+
+/* ------------------------------------------------------------------ */
+/* Screen 2 — AI chat assistant                                        */
+/* ------------------------------------------------------------------ */
+
+interface ChatMessage {
+    role: "bot" | "user";
+    text: string;
+}
+
+const chatScript: ChatMessage[] = [
+    { role: "user", text: "Turn our freight PDFs into structured data?" },
+    { role: "bot", text: "Done — every field extracted automatically. ⚡" },
+    { role: "user", text: "Can you build the dashboard too?" },
+    { role: "bot", text: "Absolutely — from prototype to production. 🚀" },
+];
+
+const CHAT_TYPING_MS = 1100;
+const CHAT_READ_MS = 950;
+const CHAT_RESTART_MS = 2600;
+
+function TypingDots() {
+    return (
+        <span className="flex items-center space-x-1">
+            {[0, 1, 2].map((i) => (
+                <motion.span
+                    key={i}
+                    className="h-2 w-2 rounded-full bg-gray-400"
+                    animate={{ opacity: [0.3, 1, 0.3], y: [0, -2, 0] }}
+                    transition={{ duration: 0.9, repeat: Infinity, delay: i * 0.15 }}
+                />
+            ))}
+        </span>
+    );
+}
+
+function ChatBubble({ message }: { message: ChatMessage }) {
+    const isBot = message.role === "bot";
+    return (
+        <motion.div
+            layout
+            initial={{ opacity: 0, y: 8, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+            className={classNames("flex w-full", isBot ? "justify-start" : "justify-end")}
+        >
+            <span
+                className={classNames(
+                    "max-w-[80%] rounded-2xl px-4 py-2 text-sm shadow-sm",
+                    isBot ? "rounded-bl-sm bg-gray-100 text-gray-900" : "rounded-br-sm bg-blue-600 text-white"
+                )}
+            >
+                {message.text}
+            </span>
+        </motion.div>
+    );
+}
+
+function ChatScreen() {
+    const [count, setCount] = useState(0);
+    const [typing, setTyping] = useState(false);
+
+    useEffect(() => {
+        let cancelled = false;
+        const timers: ReturnType<typeof setTimeout>[] = [];
+        const at = (delay: number, fn: () => void) =>
+            timers.push(setTimeout(() => !cancelled && fn(), delay));
+
+        const run = () => {
+            setCount(0);
+            setTyping(false);
+            let t = 500;
+            chatScript.forEach((msg, i) => {
+                if (msg.role === "bot") {
+                    at(t, () => setTyping(true));
+                    t += CHAT_TYPING_MS;
+                    at(t, () => {
+                        setTyping(false);
+                        setCount(i + 1);
+                    });
+                    t += CHAT_READ_MS;
+                } else {
+                    at(t, () => setCount(i + 1));
+                    t += CHAT_READ_MS;
+                }
+            });
+            at(t + CHAT_RESTART_MS, run);
+        };
+
+        run();
+        return () => {
+            cancelled = true;
+            timers.forEach(clearTimeout);
+        };
+    }, []);
+
+    return (
+        <>
+            <ScreenHeader
+                title="FP AI Assistant"
+                right={
+                    <span className="flex items-center text-xs font-light text-gray-500">
+                        <span className="mr-1.5 h-2 w-2 rounded-full bg-green-500" />
+                        Online
+                    </span>
+                }
+            />
+            <div className="flex h-[320px] flex-col justify-end space-y-3 p-6">
+                <AnimatePresence initial={false}>
+                    {chatScript.slice(0, count).map((message, i) => (
+                        <ChatBubble key={i} message={message} />
+                    ))}
+                    {typing && (
+                        <motion.div
+                            key="typing"
+                            layout
+                            initial={{ opacity: 0, y: 8 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            className="flex justify-start"
+                        >
+                            <span className="rounded-2xl rounded-bl-sm bg-gray-100 px-4 py-3">
+                                <TypingDots />
+                            </span>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+        </>
+    );
+}
+
+/* ------------------------------------------------------------------ */
+/* Showcase — rotates between the screens inside the dashed frame      */
+/* ------------------------------------------------------------------ */
+
+const screens = [
+    { id: "scan", duration: 9500, render: () => <ScannerScreen /> },
+    { id: "chat", duration: 8000, render: () => <ChatScreen /> },
+];
+
+interface AIShowcaseProperties {
+    className?: string;
+}
+
+export default function AIShowcase({ className }: AIShowcaseProperties) {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setTimeout(
+            () => setIndex((prev) => (prev + 1) % screens.length),
+            screens[index].duration
+        );
+        return () => clearTimeout(timer);
+    }, [index]);
+
     const spring = {
         stiffness: 700,
         damping: 30,
@@ -212,43 +422,17 @@ export default function AIScanUpload({ className }: AIScanUploadProperties) {
                     transition={spring}
                     className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
                 >
-                    <div className="flex items-center justify-between border-b border-gray-100 px-5 py-3.5">
-                        <div className="flex items-center space-x-2.5">
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
-                                <FPIcon className="h-4 w-4 text-blue-500" />
-                            </div>
-                            <span className="text-sm font-semibold text-gray-900">AI Document Scanner</span>
-                        </div>
-                        <AnimatePresence mode="wait">
-                            <motion.span
-                                key={pill.text}
-                                initial={{ opacity: 0, y: -4 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: 4 }}
-                                transition={{ duration: 0.2 }}
-                                className={classNames(
-                                    "rounded-full px-2.5 py-1 text-xs font-medium",
-                                    pill.className
-                                )}
-                            >
-                                {pill.text}
-                            </motion.span>
-                        </AnimatePresence>
-                    </div>
-                    <div className="relative h-[320px] p-6">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={phase}
-                                initial={{ opacity: 0, y: 12 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -12 }}
-                                transition={{ duration: 0.3 }}
-                                className="h-full"
-                            >
-                                {renderPhase(phase)}
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={screens[index].id}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.35 }}
+                        >
+                            {screens[index].render()}
+                        </motion.div>
+                    </AnimatePresence>
                 </motion.div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import Socials from "./components/socials";
 import Footer from "../components/footer";
 import Profile from "./components/profile";
 import MainTitle from "./components/mainTitle";
-import MotionForm from "./components/motionForm";
+import AIShowcase from "./components/aiShowcase";
 import Link from "next/link";
 import classNames from "classnames";
 
@@ -53,7 +53,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-1 lg:mr-6 h-[560px] flex justify-center items-center">
-              <MotionForm count={count} className="mt-10 w-[480px] rounded-lg" />
+              <AIShowcase className="mt-10 w-[480px] rounded-lg" />
             </div>
           </div>
         </PatternBackground>
